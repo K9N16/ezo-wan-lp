@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="canonical" href="https://pet.rai-group.net/ezo-wan-point/">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ポイントガイド｜公式チェックポイントでポイントをためる｜エゾわん！</title>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5ead8;--surface:#ebddc5;--text:#201e1d;--n100:#f9f4ed;--n200:#eee7db;--n300:#dcd3c4;--n600:#82796a;--n700:#645c50;--n800:#474238;--a100:#fff2eb;--a200:#ffe1d0;--a300:#ffc6a5;--a700:#8c491a;--a900:#402310;--s200:#e1eecc;--s600:#728157;--s700:#56633f;--s800:#3d472b;--s900:#272e1b;--sh-sm:0 1px 2px rgba(46,43,37,.14);--sh-md:0 3px 10px rgba(46,43,37,.16);--r:16px;--rl:28px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Zen Maru Gothic",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{position:relative;overflow:hidden;padding-bottom:96px}
+.inner{position:relative;max-width:1020px;margin:0 auto;padding:0 clamp(20px,5vw,56px)}
+.blob{position:absolute;border-radius:999px;pointer-events:none}
+h1,h2,h3{margin:0;font-weight:900;letter-spacing:-.01em}
+p{margin:0;text-wrap:pretty}
+header{padding:clamp(40px,7vw,80px) 0 clamp(26px,4vw,42px);display:flex;flex-direction:column;gap:18px;align-items:flex-start}
+.kicker{display:inline-flex;gap:8px;padding:8px 18px;border-radius:999px;background:var(--a700);color:var(--a100);font-size:15px;font-weight:700}
+h1{font-size:clamp(30px,4.6vw,52px);line-height:1.24;max-width:22em;text-wrap:balance}
+.lead{font-size:clamp(17px,2vw,22px);font-weight:700;line-height:1.6;color:var(--a700);max-width:24em}
+.body{font-size:clamp(16px,1.5vw,18.5px);line-height:1.9;color:var(--n800);max-width:34em}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.card{background:var(--n100);border-radius:var(--rl);padding:26px 24px;box-shadow:var(--sh-sm);display:flex;flex-direction:column;gap:10px}
+.card h3{font-size:19px}
+.card p{font-size:15.5px;line-height:1.8;color:var(--n800)}
+.emoji{font-size:30px}
+nav{display:flex;flex-wrap:wrap;gap:10px;padding:8px;background:var(--surface);border-radius:999px;width:fit-content;margin:clamp(40px,6vw,68px) 0 clamp(26px,4vw,38px)}
+nav button{padding:13px 24px;border:0;border-radius:999px;background:none;color:var(--n800);font:inherit;font-size:16px;font-weight:700;cursor:pointer;transition:background .2s,color .2s}
+nav button:hover{background:var(--a200)}
+nav button[aria-selected=true]{background:var(--a700);color:var(--a100)}
+nav button:focus-visible,.acc>button:focus-visible,.replay:focus-visible{outline:2px solid #c67139;outline-offset:2px}
+.panel{display:none;flex-direction:column;gap:clamp(34px,5vw,54px)}
+.panel.on{display:flex}
+h2{font-size:clamp(26px,3.4vw,38px)}
+.sub{margin:8px 0 22px;font-size:16.5px;line-height:1.8;color:var(--n800)}
+.acc{background:var(--n100);border-radius:var(--rl);box-shadow:var(--sh-sm);overflow:hidden}
+.acc>button{width:100%;display:flex;align-items:center;gap:16px;padding:20px 22px;background:none;border:0;cursor:pointer;font:inherit;text-align:left;color:inherit}
+.acc>button:hover{background:var(--a100)}
+.acc .ic{font-size:28px;width:40px;flex:none;text-align:center}
+.acc .nm{flex:1;font-size:clamp(16px,1.8vw,19px);font-weight:700}
+.pt{flex:none;padding:6px 16px;border-radius:999px;background:var(--a700);color:var(--a100);font-size:16px;font-weight:800;white-space:nowrap}
+.chev{flex:none;width:22px;font-size:15px;color:var(--n600);transition:transform .25s}
+.acc[data-open=true] .chev{transform:rotate(180deg)}
+.acc .d{max-height:0;opacity:0;overflow:hidden;transition:max-height .32s,opacity .32s}
+.acc[data-open=true] .d{max-height:220px;opacity:1}
+.acc .d p{padding:0 24px 22px 78px;font-size:15.5px;line-height:1.85;color:var(--n800)}
+.calc{position:relative;overflow:hidden;background:var(--s800);color:var(--s200);border-radius:var(--rl);padding:clamp(26px,4vw,44px);box-shadow:var(--sh-md)}
+.calc h2{color:#fff;font-size:clamp(24px,3vw,34px)}
+.calc .top{position:relative;display:flex;flex-wrap:wrap;gap:12px 24px;align-items:flex-end;justify-content:space-between;margin-bottom:24px}
+.calc .top p{font-size:16px;line-height:1.8;opacity:.9;max-width:30em;margin-top:8px}
+.replay{flex:none;padding:13px 26px;border-radius:999px;border:2px solid #ccdbb2;background:none;color:#fff;font:inherit;font-size:15.5px;font-weight:700;cursor:pointer}
+.replay:hover{background:var(--s700)}
+.rows{position:relative;display:flex;flex-direction:column;gap:10px;max-width:560px}
+.row{display:flex;align-items:center;gap:14px;padding:14px 20px;border-radius:var(--r);background:var(--s900);opacity:0;transform:translateY(12px);transition:opacity .4s,transform .4s}
+.row.on{opacity:1;transform:none}
+.row .l{flex:1;font-size:16px;font-weight:600}
+.row .v{font-size:18px;font-weight:800;color:var(--a300)}
+.total{display:flex;align-items:baseline;gap:14px;padding:18px 20px 4px;border-top:2px dashed var(--s600);margin-top:6px}
+.total b{font-size:clamp(40px,6vw,60px);line-height:1;color:var(--a300)}
+.total .u{font-size:20px;font-weight:800;color:var(--a300)}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:24px;align-items:start}
+.banner{background:var(--n100);border-radius:var(--rl);padding:22px;box-shadow:var(--sh-md);display:flex;flex-direction:column;gap:12px;font-size:16px}
+.banner div{display:flex;justify-content:space-between;gap:12px}
+.banner b{color:var(--a700)}
+.banner .sum{padding-top:12px;border-top:1px solid rgba(32,30,29,.16);font-weight:800}
+.tint{border-radius:var(--rl);padding:30px 28px;display:flex;flex-direction:column;gap:12px}
+.tint p{font-size:16px;line-height:1.85}
+.rank{background:var(--n100);border-radius:var(--rl);box-shadow:var(--sh-sm);padding:12px;display:flex;flex-direction:column;gap:4px}
+.rank .r{display:flex;align-items:center;gap:16px;padding:14px 16px;border-radius:var(--r)}
+.rank .r:hover{background:var(--a100)}
+.rank .no{flex:none;width:44px;height:44px;border-radius:999px;background:var(--a700);color:var(--a100);display:grid;place-items:center;font-size:17px;font-weight:800}
+.rank .av{flex:none;width:52px;height:52px;border-radius:999px;background:var(--n300);display:grid;place-items:center;font-size:24px}
+.rank .who{flex:1;display:flex;flex-direction:column;gap:2px}
+.rank .who b{font-size:17.5px}
+.rank .who span{font-size:14.5px;color:var(--n700)}
+.rank .p{font-size:18px;font-weight:800;color:var(--a700)}
+.note{font-size:13.5px;color:var(--n600);margin:6px 16px 10px}
+.badge{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;font-size:17px;font-weight:800}
+.tag{padding:6px 14px;border-radius:999px;background:var(--n200);font-size:13.5px;font-weight:600;color:var(--n800)}
+.pt-note{text-align:center;font-size:13px;color:#645c50;margin:28px 16px 0}
+</style>
+<link rel="stylesheet" href="/site.css">
+<meta name="description" content="エゾわん！の公式チェックポイントにチェックインしてポイントをためる仕組みのご案内。ポイントの種類、月間ランキング、称号バッジを紹介します。">
+<meta property="og:site_name" content="エゾわん！">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="ポイントガイド｜公式チェックポイントでポイントをためる｜エゾわん！">
+<meta property="og:description" content="エゾわん！の公式チェックポイントにチェックインしてポイントをためる仕組みのご案内。ポイントの種類、月間ランキング、称号バッジを紹介します。">
+<meta property="og:url" content="https://pet.rai-group.net/ezo-wan-point/">
+<meta property="og:image" content="https://pet.rai-group.net/img/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<header class="sh"><a href="/" aria-label="エゾわん！ トップへ"><img src="/img/logo.png" alt="エゾわん！" width="82" height="34"></a><a class="sh-back" href="/">トップページへ戻る</a></header>
+
+<div class="wrap">
+  <div class="blob" style="top:-140px;right:-120px;width:420px;height:420px;background:var(--a200);opacity:.55"></div>
+  <div class="blob" style="top:240px;left:-160px;width:300px;height:300px;background:var(--s200);opacity:.5"></div>
+  <div class="inner">
+
+    <header>
+      <span class="kicker">🐾 エゾわん! ポイントガイド</span>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <h1>おでかけが、ポイントになる。</h1>
+        <p class="lead">★マークのついた「公式チェックポイント」にチェックインするだけ。</p>
+      </div>
+      <p class="body">道内のパートナー施設でチェックインすると、ポイントが貯まります。貯まったポイントは毎月のランキングで競い合えて、「称号」バッジにも育ちます。仕組みをさらっと見てみましょう🐕</p>
+    </header>
+
+    <section class="grid">
+      <div class="card"><span class="emoji">⭐️</span><h3>★マークの候補ボタンからタップ</h3><p>チェックイン画面に出てくる、近くの候補ボタン。★がついていれば公式チェックポイントです。</p></div>
+      <div class="card"><span class="emoji">✏️</span><h3>施設名の手入力は対象外</h3><p>同じ場所の名前でも、自分で打ち込んだチェックインにはポイントがつきません。候補ボタンからどうぞ！</p></div>
+      <div class="card"><span class="emoji">🕒</span><h3>同じ施設は1日1回まで</h3><p>同じ場所で何度チェックインしても、その日のポイントは1回分。のんびり巡りましょう。</p></div>
+    </section>
+
+    <nav role="tablist">
+      <button type="button" role="tab" data-tab="points" aria-selected="true">💰 ポイントの貯め方</button>
+      <button type="button" role="tab" data-tab="ranking" aria-selected="false">🏆 月間ランキング</button>
+      <button type="button" role="tab" data-tab="titles" aria-selected="false">🎖 称号バッジ</button>
+    </nav>
+
+    <div class="panel on" id="points">
+      <div>
+        <h2>6種類のポイント 🎁</h2>
+        <p class="sub">1回のチェックインで、いくつも同時に貯まることがあります。タップすると条件が開きます。</p>
+        <div style="display:flex;flex-direction:column;gap:12px" id="accs"></div>
+      </div>
+
+      <div class="calc">
+        <div class="blob" style="right:-70px;bottom:-70px;width:240px;height:240px;background:var(--s700);opacity:.6"></div>
+        <div class="top">
+          <div>
+            <h2>いちばん多く貯まる日 ✨</h2>
+            <p>できたばかりの新しい施設に、はじめて訪問。しかもそれが5施設目で、今月の最初のチェックインだったら…</p>
+          </div>
+          <button type="button" class="replay">▶︎ もう一度見る</button>
+        </div>
+        <div class="rows" id="rows"></div>
+        <div class="rows"><div class="total"><span style="font-size:16px;font-weight:700">この1回で</span><b id="total">0</b><span class="u">pt</span></div></div>
+      </div>
+
+      <div class="two">
+        <div>
+          <h2 style="font-size:clamp(24px,3vw,32px)">チェックインした瞬間に、内訳が出ます 📣</h2>
+          <p class="sub" style="margin-bottom:0">なにで何ポイント貯まったのかは、チェックインの直後にその場で表示されます。あとから記録タブでも確認できます。</p>
+        </div>
+        <div class="banner">
+          <div><span>🐾 チェックインしました</span><b>+1pt</b></div>
+          <div><span>🎉 初チェックイン!</span><b>+5pt</b></div>
+          <div><span>🌟 今月最初のチェックイン!</span><b>+5pt</b></div>
+          <div class="sum"><span>現在ポイント</span><span>11pt</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel" id="ranking">
+      <div class="two">
+        <div class="tint" style="background:var(--a200)"><span class="emoji">📅</span><h3 style="font-size:22px">今月のポイント</h3><p style="color:var(--a900)">毎月1日の0:00にリセットされて、また0からスタート。月間ランキングと、称号バッジの獲得条件に使われるのはこちらです。</p></div>
+        <div class="tint" style="background:var(--s200)"><span class="emoji">📈</span><h3 style="font-size:22px">生涯獲得ポイント</h3><p style="color:var(--s900)">リセットされず、ずっと積み上がっていく合計。これまでの歩みの記録として、プロフィールに表示されます。</p></div>
+      </div>
+      <div>
+        <h2>毎月1日、上位5名を発表 🏆</h2>
+        <p class="sub" style="max-width:40em">前の月の「今月のポイント」トップ5が「お知らせ」に自動で投稿されます。順位・お名前・犬種・写真・獲得ポイントが載って、タップすると詳しいポップアップが開きます。発表のあと、みんなの今月のポイントは0にリセット。生涯ポイントはそのままです。</p>
+        <div class="rank" id="rank"></div>
+      </div>
+    </div>
+
+    <div class="panel" id="titles">
+      <div class="two">
+        <div>
+          <h2>ポイントが貯まると、称号がもらえる 🎖</h2>
+          <p class="sub" style="margin-bottom:16px">「今月のポイント」がある基準に届くと、その称号バッジが自動でプロフィールに増えます。申請などは必要ありません。チェックインするたびに判定されるので、届いたその瞬間にもらえます。</p>
+          <p class="sub" style="margin:0">称号は毎月リセットされます。月が変わってポイントが0に戻ると称号もいったん外れるので、その月ごとにまた集めていきましょう✨</p>
+        </div>
+        <div class="card" style="box-shadow:var(--sh-md);gap:14px">
+          <span style="font-size:14px;font-weight:700;letter-spacing:.06em;color:var(--n600)">プロフィールでの見え方</span>
+          <div style="display:flex;flex-wrap:wrap;gap:10px">
+            <span class="badge" style="background:var(--a700);color:var(--a100)">🏆 まちの探検家</span>
+            <span class="badge" style="background:var(--s700);color:var(--s200)">🌲 森の常連</span>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;padding-top:6px">
+            <span class="tag">おさんぽ好き</span><span class="tag">カフェ派</span>
+          </div>
+          <p style="font-size:14px;line-height:1.7;color:var(--n700)">称号は、ふつうのタグより大きなバッジで目立つように表示されます。（デザインイメージ）</p>
+        </div>
+      </div>
+      <div style="background:var(--surface);border-radius:var(--rl);padding:clamp(26px,4vw,40px);display:flex;flex-direction:column;gap:18px">
+        <h3 style="font-size:clamp(20px,2.4vw,26px)">称号を目指すときのコツ 🐾</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px">
+          <p style="font-size:16px;line-height:1.85">✨ <b>新しい施設</b>をねらう。初チェックイン+5pt、公開30日以内ならさらに+10pt。</p>
+          <p style="font-size:16px;line-height:1.85">🏅 <b>いろんな場所</b>へ。違う施設が5か所ごとに+10ptのボーナス。</p>
+          <p style="font-size:16px;line-height:1.85">🔁 お気に入りは<b>1週間あけて</b>再訪すると+3pt。月初の1回目も+5pt。</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="pt-note">ポイントの計算はすべてサーバー側で行われます。安心してお散歩を楽しんでください。</p>
+  </div>
+</div>
+<script>
+var POINTS=[["🐾","通常のチェックイン","+1pt","公式チェックポイントにチェックインするたびに貯まります。同じ施設のポイントは1日1回までです。"],
+["🎉","初チェックイン","+5pt","その施設にはじめて訪れたときのボーナス。施設ごとに一生に1回だけもらえます。"],
+["🔁","7日ぶりの再訪","+3pt","前回そこにチェックインしてから7日以上あけて、また訪れたとき。はじめて訪れた回は対象外です。"],
+["🌟","今月最初のチェックイン","+5pt","その月に、どこかの公式チェックポイントへ最初にチェックインしたとき。月に1回もらえます。"],
+["✨","新規認定施設ボーナス","+10pt","公式チェックポイントになってから30日以内の新しい施設に、はじめてチェックインしたとき。"],
+["🏅","施設巡りボーナス","+10pt","これまでに訪れた「違う公式施設」の数が5の倍数に届いた瞬間（5施設目、10施設目…）。"]];
+var CALC=[["🐾","チェックインしました",1],["🎉","初チェックイン!",5],["✨","できたばかりの新しい施設!",10],["🌟","今月最初のチェックイン!",5],["🏅","5施設目のごほうび!",10]];
+var RANK=[[1,"モコ","柴犬","128pt"],[2,"ラテ","トイプードル","121pt"],[3,"ソラ","ボーダー・コリー","97pt"],[4,"あずき","ミニチュアダックス","88pt"],[5,"コタロウ","北海道犬","76pt"]];
+var accs=document.getElementById("accs");
+POINTS.forEach(function(p){
+  var d=document.createElement("div");d.className="acc";d.setAttribute("data-open","false");
+  d.innerHTML='<button type="button"><span class="ic">'+p[0]+'</span><span class="nm">'+p[1]+'</span><span class="pt">'+p[2]+'</span><span class="chev">▾</span></button><div class="d"><p>'+p[3]+'</p></div>';
+  d.querySelector("button").addEventListener("click",function(){
+    var open=d.getAttribute("data-open")==="true";
+    Array.prototype.forEach.call(accs.children,function(c){c.setAttribute("data-open","false");});
+    d.setAttribute("data-open",open?"false":"true");
+  });
+  accs.appendChild(d);
+});
+var rowsEl=document.getElementById("rows"),totalEl=document.getElementById("total"),timer;
+CALC.forEach(function(c){
+  var r=document.createElement("div");r.className="row";
+  r.innerHTML='<span style="font-size:22px">'+c[0]+'</span><span class="l">'+c[1]+'</span><span class="v">+'+c[2]+'pt</span>';
+  rowsEl.appendChild(r);
+});
+function play(){
+  clearInterval(timer);var i=0,sum=0;
+  Array.prototype.forEach.call(rowsEl.children,function(r){r.classList.remove("on");});
+  totalEl.textContent="0";
+  timer=setInterval(function(){
+    if(i>=CALC.length){clearInterval(timer);return;}
+    rowsEl.children[i].classList.add("on");sum+=CALC[i][2];totalEl.textContent=sum;i++;
+  },620);
+}
+document.querySelector(".replay").addEventListener("click",play);
+var rk=document.getElementById("rank");
+RANK.forEach(function(d){
+  var e=document.createElement("div");e.className="r";
+  e.innerHTML='<span class="no">'+d[0]+'</span><span class="av">🐕</span><span class="who"><b>'+d[1]+'</b><span>'+d[2]+'</span></span><span class="p">'+d[3]+'</span>';
+  rk.appendChild(e);
+});
+rk.insertAdjacentHTML("beforeend",'<p class="note">※表示イメージです</p>');
+Array.prototype.forEach.call(document.querySelectorAll("nav button"),function(b){
+  b.addEventListener("click",function(){
+    Array.prototype.forEach.call(document.querySelectorAll("nav button"),function(x){x.setAttribute("aria-selected",x===b?"true":"false");});
+    Array.prototype.forEach.call(document.querySelectorAll(".panel"),function(p){p.classList.toggle("on",p.id===b.dataset.tab);});
+  });
+});
+setTimeout(play,700);
+</script>
+<footer class="sfoot">
+  <div class="sfoot-in">
+    <div class="ft">
+      <div class="ft-brand">
+        <a href="/" aria-label="エゾわん！ トップへ"><img src="/img/logo.png" alt="エゾわん！" width="120" height="50"></a>
+        <p>北海道の愛犬家のためのアプリ</p>
+        <a class="ft-ig" href="https://www.instagram.com/ezo_wan_hokkaido/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+      <nav aria-label="アプリについて"><h3>アプリについて</h3><a href="/About-EZO-WAN/">使い方ガイド</a><a href="/ezo-wan-point/">ポイントガイド</a></nav>
+      <nav aria-label="施設・事業者の方"><h3>施設・事業者の方</h3><a href="/Join-EZO-WAN/">認定パートナー施設 申込み</a><a href="/Advertisement/">宣伝・お知らせ掲載 申込み</a></nav>
+      <nav aria-label="規約・お問い合わせ"><h3>規約・お問い合わせ</h3><a href="/terms/">利用規約</a><a href="/privacy/">プライバシーポリシー</a><a href="/tokushoho/">特定商取引法に基づく表記</a><a href="mailto:ezo-wan@rai-group.net?subject=%E3%82%A8%E3%82%BE%E3%82%8F%E3%82%93%EF%BC%81%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B&amp;body=%E3%82%A8%E3%82%BE%E3%82%8F%E3%82%93%EF%BC%81%E9%81%8B%E5%96%B6%E4%BA%8B%E5%8B%99%E5%B1%80%20%E5%BE%A1%E4%B8%AD%0A%0A%E3%80%90%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B%E5%86%85%E5%AE%B9%E3%80%91%0A%EF%BC%88%E3%81%93%E3%81%93%E3%81%AB%E3%81%94%E8%A8%98%E5%85%A5%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%EF%BC%89%0A%0A%E3%80%90%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%88%E4%BB%BB%E6%84%8F%EF%BC%89%E3%80%91%0A%0A%E3%80%90%E3%81%94%E5%88%A9%E7%94%A8%E3%81%AE%E6%A9%9F%E7%A8%AE%EF%BC%88iPhone%20%2F%20Android%EF%BC%89%E3%80%91%0A%0A">お問い合わせ</a></nav>
+    </div>
+    <p class="ft-copy">© RAI GROUP ／ 運営：RAI GROUP</p>
+  </div>
+</footer>
+</body>
+</html>

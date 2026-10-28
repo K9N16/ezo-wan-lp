@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>エゾわん！｜北海道の愛犬アプリ・近くのわんちゃんを知る、お出かけ目安、ワクチン証明、防災</title>
+<meta name="description" content="エゾわん！は、北海道で犬と暮らす人のためのアプリ。会う前に近くのわんちゃんの性格が分かり、お出かけの目安・ワクチン接種証明の保管・もしもの時の防災情報も。メールアドレス・パスワード不要で、ダウンロード無料。運営：RAI GROUP。">
+
+<link rel="canonical" href="https://pet.rai-group.net/">
+<meta property="og:site_name" content="エゾわん！">
+<meta property="og:title" content="エゾわん！｜北海道の愛犬アプリ">
+<meta property="og:description" content="会う前に近くのわんちゃんが分かる。お出かけの目安、ワクチン証明、もしもの備えまで。メールアドレス・パスワード不要。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://pet.rai-group.net/">
+<meta property="og:image" content="https://pet.rai-group.net/img/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://pet.rai-group.net/img/ogp.png">
+<meta name="theme-color" content="#FFF1E0">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=swap">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MobileApplication","name":"エゾわん！","applicationCategory":"LifestyleApplication","operatingSystem":"iOS, Android","inLanguage":"ja","description":"北海道で犬と暮らす人のためのアプリ。近くのわんちゃんのプロフィール、お出かけの目安、ワクチン接種証明の保管、防災情報など。","offers":{"@type":"Offer","price":"0","priceCurrency":"JPY"},"publisher":{"@type":"Organization","name":"RAI GROUP"},"url":"https://pet.rai-group.net/","sameAs":["https://www.instagram.com/ezo_wan_hokkaido/"]}
+</script>
+<style>
+:root{--bg:#FFF8EE;--cream:#FFF1E0;--card:#fff;--line:#F0DCC0;--ink:#3A2A1E;--sub:#7A6350;--brand:#C67139;--brand-d:#A85A28;--green:#2F7D4F;--green-bg:#E7F4EC;--red:#B8402E;--red-bg:#FBE9E5;--amber:#C98A1E;--shadow:0 10px 30px rgba(120,70,20,.14)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Zen Maru Gothic","Hiragino Maru Gothic ProN","Yu Gothic",Meiryo,sans-serif;line-height:1.8;font-weight:500;-webkit-text-size-adjust:100%}
+img{max-width:100%;display:block}
+a{color:inherit}
+.in{max-width:1080px;margin:0 auto;padding:0 20px}
+h1,h2,h3{line-height:1.4;margin:0;font-weight:900}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 24px;border-radius:999px;background:var(--brand);color:#fff;text-decoration:none;font-weight:900;font-size:16px}
+.btn:hover{background:var(--brand-d)}
+.btn.ghost{background:#fff;color:var(--brand);border:2px solid var(--brand)}
+.btn.sm{min-height:40px;padding:0 18px;font-size:14px}
+
+.head{position:sticky;top:0;z-index:20;background:rgba(255,248,238,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.head .in{display:flex;align-items:center;gap:20px;height:64px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:900;font-size:21px;margin-right:auto}
+.logo img{height:40px;width:auto}
+.logo .mark{width:34px;height:34px;border-radius:50%;background:var(--brand);display:grid;place-items:center}
+.logo .mark svg{width:20px;height:20px;fill:#fff}
+.logo .bang{color:var(--brand)}
+.head nav{display:flex;gap:22px;font-size:14px;font-weight:700}
+.head nav a{text-decoration:none;color:var(--sub)}
+.head nav a:hover{color:var(--brand)}
+
+.hero{padding:48px 0 56px;background:linear-gradient(180deg,var(--cream),var(--bg))}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center}
+.tag{display:inline-block;background:#fff;border:1px solid var(--line);color:var(--brand);font-weight:900;font-size:13px;padding:4px 14px;border-radius:999px}
+.hero h1{font-size:clamp(28px,4.6vw,46px);margin:14px 0 14px}
+.hero h1 em{font-style:normal;color:var(--brand)}
+.lead{font-size:16px;color:var(--sub);margin:0 0 18px}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px;padding:0;list-style:none}
+.pills li{background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px 14px;font-size:13px;font-weight:900;color:var(--green)}
+.pills li::before{content:"✓ "}
+.store{display:flex;flex-wrap:wrap;gap:12px}
+.mini{font-size:12px;color:var(--sub);margin:12px 0 0}
+.hero-phones{display:flex;justify-content:center;align-items:flex-start;gap:0;position:relative}
+.hero-phones .phone:nth-child(2){margin-left:-10px;margin-top:48px}
+
+.phone{width:264px;flex:none;border:8px solid #2B2118;border-radius:38px;background:var(--cream);box-shadow:var(--shadow);overflow:hidden;position:relative}
+.phone .scr{height:540px;display:flex;flex-direction:column;position:relative}
+.ph-hd{padding:14px 16px 10px;font-weight:900;font-size:15px;display:flex;align-items:center;gap:6px;color:var(--ink)}
+.ph-hd .back{color:var(--brand);font-size:13px}
+.ph-hd{white-space:nowrap}
+.ph-hd .loc{margin-left:auto;white-space:nowrap;font-size:11px;background:#F6E3C6;color:var(--brand-d);padding:1px 8px;border-radius:999px}
+.ph-bd{flex:1;overflow:hidden;padding:0 12px}
+.ph-tabs{display:flex;background:#fff;border-top:1px solid var(--line);padding:6px 0 8px}
+.ph-tabs div{flex:1;text-align:center;font-size:9.5px;font-weight:700;color:#A58C76}
+.ph-tabs div.on{color:var(--brand)}
+.ph-tabs svg{display:block;margin:0 auto 1px;width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.dcard{display:flex;gap:10px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:14px;padding:8px;margin-bottom:8px}
+.dcard img{width:54px;height:54px;border-radius:12px;object-fit:cover;flex:none}
+.dcard>div:nth-child(2){min-width:0;flex:1}
+.dcard b{font-size:14px;display:block;line-height:1.3}
+.dcard small{font-size:10.5px;color:var(--sub);line-height:1.4;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dcard .wave{flex:none;font-size:10.5px;background:var(--cream);border:1px solid var(--line);border-radius:999px;padding:2px 7px;font-weight:900;color:var(--brand);white-space:nowrap}
+.dcard .wave.done{background:var(--green-bg);color:var(--green);border-color:#BFE0CC}
+.chiprow{display:flex;gap:6px;margin:0 0 8px;overflow:hidden}
+.chiprow span{font-size:11px;font-weight:900;padding:3px 10px;border-radius:999px;background:#fff;border:1px solid var(--line);white-space:nowrap}
+.chiprow .on{background:var(--brand);border-color:var(--brand);color:#fff}
+.note-in{font-size:10.5px;color:var(--sub);margin:2px 4px 8px}
+.pf-photo{border-radius:16px;overflow:hidden;height:170px;margin-bottom:10px}
+.pf-photo img{width:100%;height:100%;object-fit:cover}
+.pf-name{font-size:19px;font-weight:900;margin:0}
+.pf-sub{font-size:12px;color:var(--sub);margin:0 0 8px}
+.pf-box{background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px 10px;margin-bottom:8px}
+.pf-box h4{margin:0 0 4px;font-size:12px;font-weight:900}
+.chip{display:inline-block;font-size:11px;font-weight:900;padding:2px 10px;border-radius:999px;margin:0 4px 4px 0}
+.chip.g{background:var(--green-bg);color:var(--green)}
+.chip.r{background:var(--red-bg);color:var(--red)}
+.chip.n{background:#F6E3C6;color:var(--brand-d)}
+.bar5{display:flex;gap:3px;align-items:center;font-size:11px}
+.bar5 i{display:block;height:8px;flex:1;border-radius:4px;background:#E7D8C2}
+.bar5 i.on{background:var(--brand)}
+.cta{display:block;text-align:center;background:var(--brand);color:#fff;font-weight:900;font-size:14px;border-radius:999px;padding:9px;margin-top:6px}
+.outing-img{width:100%;height:auto;display:block}
+.cert{background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px;margin-bottom:8px}
+.cert h4{margin:0;font-size:13px;font-weight:900;display:flex;justify-content:space-between;align-items:center;gap:6px}
+.ok-badge{font-size:10.5px;font-weight:900;color:var(--green);background:var(--green-bg);padding:2px 9px;border-radius:999px;white-space:nowrap}
+.cert dl{display:grid;grid-template-columns:auto 1fr;gap:2px 10px;font-size:11.5px;margin:6px 0 0}
+.cert dt{color:var(--sub)}
+.cert dd{margin:0;font-weight:900}
+.paper{height:118px;border-radius:10px;background:linear-gradient(180deg,#fff,#f7efe2);border:1px dashed #D9C3A0;margin-top:8px;padding:10px;font-size:10px;color:#8b7561;line-height:1.5}
+.paper b{display:block;font-size:12px;color:#5b4636;margin-bottom:4px}
+.paper i{display:block;height:5px;border-radius:3px;background:#E8DAC3;margin:5px 0;width:80%}
+.paper i.s{width:55%}
+.bigok{background:var(--green);color:#fff;border-radius:14px;padding:12px;margin-bottom:8px}
+.bigok b{font-size:15px;display:block}
+.bigok small{font-size:11px;opacity:.92}
+.anrow{display:flex;gap:10px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px;margin-bottom:8px}
+.anrow .ic{width:34px;height:34px;border-radius:10px;background:var(--cream);display:grid;place-items:center;flex:none}
+.anrow .ic svg{width:19px;height:19px;stroke:var(--brand);fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.anrow b{font-size:13px;display:block;line-height:1.3}
+.anrow small{font-size:10.5px;color:var(--sub);line-height:1.4;display:block}
+.anrow.red{background:var(--red-bg);border-color:#F0C6BE}
+.anrow.red .ic{background:#fff}
+.anrow.red .ic svg{stroke:var(--red)}
+.cap{font-size:11.5px;color:var(--sub);text-align:center;margin:12px 0 0}
+
+.scrollbtn{position:absolute;left:50%;bottom:56px;transform:translateX(-50%);z-index:3;font:inherit;font-size:12px;font-weight:700;color:#3A2A1E;background:rgba(255,255,255,.96);border:1.5px solid #3A2A1E;border-radius:999px;padding:6px 16px;cursor:pointer;box-shadow:0 3px 10px rgba(58,42,30,.18);white-space:nowrap;transition:opacity .2s}
+.scrollbtn:hover{background:#fff}
+.scrollbtn.hide{opacity:0;pointer-events:none}
+.ph-bd.scroll{overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#D9BF9A transparent;padding-bottom:6px}
+.ph-bd.scroll::-webkit-scrollbar{width:4px}.ph-bd.scroll::-webkit-scrollbar-thumb{background:#D9BF9A;border-radius:4px}
+.tgrid{padding:2px 0 8px;display:grid;grid-template-columns:repeat(3,1fr);gap:8px 6px}
+.tile{position:relative;min-width:0}
+.tile .ph{position:relative;aspect-ratio:1/1;border-radius:10px;overflow:hidden;background:#E9D8C8}
+.tile .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.tile .nm{padding:4px 2px 0;color:var(--ink);text-align:left}
+.tile .nm b{display:block;font-size:11px;line-height:1.25;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tile .nm small{display:block;font-size:9px;color:var(--sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:1.3}
+.tile .od{position:absolute;top:5px;left:5px;width:10px;height:10px;border-radius:50%;border:2px solid rgba(255,255,255,.9)}
+.od.g{background:#6B8F5E}.od.y{background:#D98E3B}.od.n{background:#9AA0A6}
+.tile .hrt{position:absolute;top:3px;right:5px;color:#D9772E;font-size:13px;line-height:1;text-shadow:0 0 2px #fff,0 0 2px #fff}
+.tile.fac .ph{border:2px solid #B9A3DA;background:#EFE7F7}
+.tile .ph0{height:100%;display:grid;place-items:center;font-size:24px;color:#8E7BB0}
+.tile .st{position:absolute;top:4px;left:4px;width:18px;height:18px;border-radius:50%;background:#6A4E9C;color:#fff;font-size:9px;font-style:normal;font-weight:900;display:grid;place-items:center}
+
+.sec{padding:72px 0}
+.sec.alt{background:var(--cream)}
+.sec-head{text-align:center;margin-bottom:40px}
+.sec-head h2{font-size:clamp(24px,3.6vw,34px)}
+.sec-head p{color:var(--sub);margin:8px 0 0}
+.feat{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.feat.rev .feat-txt{order:2}
+.num{display:inline-block;font-size:13px;font-weight:900;color:#fff;background:var(--brand);border-radius:999px;padding:2px 14px;margin-bottom:10px;letter-spacing:.05em}
+.feat h2{font-size:clamp(23px,3.4vw,32px);margin-bottom:12px}
+.feat .body{margin:0 0 14px;color:var(--ink)}
+.feat ul{list-style:none;margin:0 0 10px;padding:0}
+.feat li{position:relative;padding:0 0 8px 28px;font-weight:700}
+.feat li::before{content:"";position:absolute;left:0;top:7px;width:17px;height:17px;border-radius:50%;background:var(--brand) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 8.5l2.7 2.7L12 5.5' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat}
+.note{font-size:12px;color:var(--sub)}
+.feat-shot{display:flex;flex-direction:column;align-items:center}
+.pair{display:flex;justify-content:center;align-items:flex-start}
+.pair .phone:nth-child(2){margin-left:-10px;margin-top:44px}
+
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.fcard{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px 18px}
+.fcard .ic{width:40px;height:40px;border-radius:12px;background:var(--cream);display:grid;place-items:center;margin-bottom:8px}
+.fcard .ic svg{width:22px;height:22px;stroke:var(--brand);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.fcard h3{font-size:16px;margin-bottom:4px}
+.fcard p{margin:0;font-size:13.5px;color:var(--sub);line-height:1.65}
+.fgroup{font-size:15px;font-weight:900;color:var(--brand-d);margin:30px 0 12px;display:flex;align-items:center;gap:10px}
+.fgroup::after{content:"";height:1px;background:var(--line);flex:1}
+
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.step{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px 20px;text-align:center}
+.step .n{width:38px;height:38px;border-radius:50%;background:var(--brand);color:#fff;font-weight:900;display:grid;place-items:center;margin:0 auto 10px;font-size:18px}
+.step h3{font-size:18px;margin-bottom:6px}
+.step p{margin:0;font-size:14px;color:var(--sub)}
+.noreg{margin:26px auto 0;max-width:620px;background:var(--green-bg);border:1px solid #BFE0CC;border-radius:18px;padding:14px 20px;text-align:center;font-weight:900;color:var(--green)}
+.noreg small{display:block;font-weight:500;font-size:12.5px;color:#3d6b52}
+
+.spi{max-width:760px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px 24px;text-align:center}
+.spi b{display:inline-block;background:var(--green-bg);color:var(--green);border:1px solid #BFE0CC;border-radius:999px;padding:4px 16px;font-size:15px}
+.spi p{margin:10px 0 0;font-size:13.5px;color:var(--sub)}
+
+.faq{max-width:760px;margin:0 auto}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:0 18px;margin-bottom:10px}
+.faq summary{cursor:pointer;font-weight:900;padding:14px 0;list-style:none;display:flex;justify-content:space-between;gap:10px}
+.faq summary::after{content:"＋";color:var(--brand)}
+.faq details[open] summary::after{content:"－"}
+.faq details p{margin:0 0 14px;color:var(--sub);font-size:14.5px}
+
+.dl{background:var(--brand);color:#fff;text-align:center;padding:56px 0}
+.dl h2{font-size:clamp(23px,3.4vw,32px);margin-bottom:8px}
+.dl p{margin:0 0 20px;opacity:.95}
+.dl .store{justify-content:center}
+.dl .btn{background:#fff;color:var(--brand-d)}
+.dl .btn:hover{background:var(--cream)}
+
+@media (max-width:860px){
+  .head nav{display:none}
+  .hero-grid,.feat{grid-template-columns:1fr;gap:28px}
+  .feat.rev .feat-txt{order:0}
+  .hero{padding-top:28px}
+  .grid,.steps{grid-template-columns:1fr 1fr}
+  .sec{padding:52px 0}
+}
+@media (max-width:560px){
+  .grid,.steps{grid-template-columns:1fr}
+  .hero-phones .phone:nth-child(2),.pair .phone:nth-child(2){display:none}
+  .phone{width:248px}
+  .btn{width:100%}
+  .head .btn{width:auto}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+<link rel="stylesheet" href="/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"料金はかかりますか？","acceptedAnswer":{"@type":"Answer","text":"ダウンロードは無料です。メールアドレスやパスワードの登録も必要ありません。"}},{"@type":"Question","name":"犬を飼っていなくても使えますか？","acceptedAnswer":{"@type":"Answer","text":"わんちゃんの登録をして使うアプリです。愛犬のいる方が対象です。"}},{"@type":"Question","name":"iPhoneでもAndroidでも使えますか？","acceptedAnswer":{"@type":"Answer","text":"どちらにも対応しています。App StoreまたはGoogle Playから入手できます。"}}]},{"@type":"Organization","name":"RAI GROUP","url":"https://pet.rai-group.net/","logo":"https://pet.rai-group.net/img/logo.png","email":"ezo-wan@rai-group.net","sameAs":["https://www.instagram.com/ezo_wan_hokkaido/"]},{"@type":"WebSite","name":"エゾわん！","url":"https://pet.rai-group.net/","inLanguage":"ja"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="paw" viewBox="0 0 24 24"><ellipse cx="5.6" cy="10.2" rx="2.1" ry="2.9"/><ellipse cx="18.4" cy="10.2" rx="2.1" ry="2.9"/><ellipse cx="9.6" cy="5.9" rx="2" ry="2.8"/><ellipse cx="14.4" cy="5.9" rx="2" ry="2.8"/><path d="M12 11.6c3.3 0 5.6 2.2 5.6 4.6 0 2.1-1.8 3.2-3.5 2.7-1.2-.3-2.8-.3-4 0-1.7.5-3.5-.6-3.5-2.7 0-2.4 2.3-4.6 5.4-4.6z"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8M5 10v10h14V10"/></symbol>
+    <symbol id="i-rec" viewBox="0 0 24 24"><path d="M6 3h12v18H6zM9 8h6M9 12h6M9 16h4"/></symbol>
+    <symbol id="i-people" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.5 3-6 6.5-6s6.5 2.5 6.5 6M16 4.8a3.5 3.5 0 010 6.4M18 14.4c2 .8 3.5 2.8 3.5 5.6"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2.2 2.2L15.5 10"/></symbol>
+    <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></symbol>
+    <symbol id="i-quake" viewBox="0 0 24 24"><path d="M2 12h4l2-6 4 12 3-9 2 3h5"/></symbol>
+    <symbol id="i-bowl" viewBox="0 0 24 24"><path d="M3 11h18a9 9 0 01-18 0zM8 7c0-2 2-2 2-4M13 7c0-2 2-2 2-4"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l5 5"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 005 9.5C5 14.800 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="M12 8v8M8 12h8"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></symbol>
+    <symbol id="i-card" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M7 10h4M7 14h6"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.8-4.5 4.2 1.2 6L12 16.7 6.5 19.600l1.200-6L3.200 9.400l6.100-.8z"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 17V11a6 6 0 0112 0v6l2 2H4zM10 21h4"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 4h7a2 2 0 012 2v14a2 2 0 00-2-2H4zM20 4h-7v16h7z"/></symbol>
+    <symbol id="i-bear" viewBox="0 0 24 24"><circle cx="12" cy="13" r="7"/><circle cx="6" cy="6.500" r="2.500"/><circle cx="18" cy="6.500" r="2.500"/><circle cx="9.500" cy="12" r=".6"/><circle cx="14.500" cy="12" r=".6"/><path d="M10.500 15.500h3"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-8-4.800-8-10.500A4.500 4.500 0 0112 7a4.500 4.500 0 018 2.500C20 15.200 12 20 12 20z"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M3 8h4l2-3h6l2 3h4v12H3z"/><circle cx="12" cy="13" r="3.5"/></symbol>
+    <symbol id="i-qr" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM20 14v3M14 20h3M20 20h1"/></symbol>
+    <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M7 4h10v5a5 5 0 01-10 0zM7 6H3c0 3 1.500 4.500 4 5M17 6h4c0 3-1.500 4.500-4 5M12 14v4M8 21h8"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V4M4 20h16M8 16v-4M12 16V8M16 16v-6"/></symbol>
+    <symbol id="i-warn" viewBox="0 0 24 24"><path d="M12 3l10 18H2z"/><path d="M12 10v5M12 18v.5"/></symbol>
+    <symbol id="i-family" viewBox="0 0 24 24"><circle cx="8" cy="7" r="3"/><circle cx="17" cy="9" r="2.500"/><path d="M2.500 20c0-3.500 2.500-6 5.500-6s5.500 2.500 5.500 6M14.500 20c0-2.600 1.500-4.500 3.500-4.500s3.500 1.900 3.500 4.500"/></symbol>
+  </defs>
+</svg>
+
+<header class="head">
+  <div class="in">
+    <a class="logo" href="#top" aria-label="エゾわん！ トップへ"><img src="img/logo.png" alt="エゾわん！" width="96" height="40"></a>
+    <nav aria-label="ページ内">
+      <a href="#f1">近くのわんちゃん</a>
+      <a href="#f2">お出かけ目安</a>
+      <a href="#f3">ワクチン証明</a>
+      <a href="#f4">あんしん</a>
+      <a href="#all">全機能</a>
+      <a href="#start">はじめ方</a>
+    </nav>
+    <a class="btn sm" href="#download">ダウンロード</a>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="in hero-grid">
+    <div>
+      <span class="tag">北海道の愛犬家のためのアプリ</span>
+      <h1>はじめましての前に、<br><em>相手のわんちゃん</em>の<br>ことが分かる。</h1>
+      <p class="lead">近くのわんちゃんの性格、今日のお出かけの目安、ワクチンの接種証明、もしもの時の備えまで。愛犬との毎日をまるごと支えるアプリです。</p>
+      <ul class="pills"><li>ダウンロード無料</li><li>メールアドレス不要</li><li>パスワード不要</li></ul>
+      <div class="store">
+        <a class="btn" href="https://apps.apple.com/jp/app/id6796604381" rel="noopener noreferrer">App Storeで入手</a>
+        <a class="btn ghost" href="https://play.google.com/store/apps/details?id=net.raigroup.ezowan" rel="noopener noreferrer">Google Playで入手</a>
+      </div>
+      <p class="mini">LINEやInstagramの中で開けないときは、ストアで「エゾわん」と検索してください。</p>
+    </div>
+    <div class="hero-phones" aria-label="アプリ画面の表示例">
+      <div class="phone"><div class="scr">
+        <div class="ph-hd">近くのわんちゃん<span class="loc">未挨拶だけ</span></div>
+        <div class="ph-bd scroll" tabindex="0" aria-label="近くのわんちゃん一覧（スクロールできます）">
+          <div class="tgrid">
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d001.jpg" alt="かつお（ダックス・4歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>かつお</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d004.jpg" alt="ぬぅ（シープドッグ・3歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>ぬぅ</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d006.jpg" alt="ぶったん（MIX・3歳）" width="76" height="76" loading="lazy"><i class="od n"></i></div><div class="nm"><b>ぶったん</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d008.jpg" alt="ぷっこ（ボストンテリア・5歳）" width="76" height="76" loading="lazy"><i class="od y"></i></div><div class="nm"><b>ぷっこ</b></div></div>
+            <div class="tile fac"><div class="ph"><div class="ph0">🏠</div><i class="st">店</i></div><div class="nm"><b>認定ドッグラン</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d012.jpg" alt="ゆず（柴犬・2歳）" width="76" height="76" loading="lazy"><i class="od y"></i></div><div class="nm"><b>ゆず</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d015.jpg" alt="アッシュ（シェルティ・6歳）" width="76" height="76" loading="lazy"><i class="od n"></i></div><div class="nm"><b>アッシュ</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d017.jpg" alt="ポメ吉（ポメラニアン・3歳）" width="76" height="76" loading="lazy"><i class="od y"></i></div><div class="nm"><b>ポメ吉</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d019.jpg" alt="ポン太（フレンチブル・5歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>ポン太</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d024.jpg" alt="ロイ（キャバリア・4歳）" width="76" height="76" loading="lazy"><i class="od n"></i></div><div class="nm"><b>ロイ</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d041.jpg" alt="PIPI（チワワ・2歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>PIPI</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d042.jpg" alt="いくら（チワワ・3歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>いくら</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d044.jpg" alt="きき（ダックス・6歳）" width="76" height="76" loading="lazy"><i class="od y"></i></div><div class="nm"><b>きき</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d047.jpg" alt="ぎしみ（シーズー・8歳）" width="76" height="76" loading="lazy"><i class="od n"></i></div><div class="nm"><b>ぎしみ</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d049.jpg" alt="ぐり（グリフォン・7歳）" width="76" height="76" loading="lazy"><i class="od y"></i></div><div class="nm"><b>ぐり</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d051.jpg" alt="こあら（チワワ・4歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>こあら</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d053.jpg" alt="ちゃむ（トイプードル・1歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>ちゃむ</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d058.jpg" alt="となり（チワワ・2歳）" width="76" height="76" loading="lazy"><i class="od y"></i></div><div class="nm"><b>となり</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d061.jpg" alt="ひな（ポメラニアン・3歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>ひな</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d066.jpg" alt="べぺ（フレンチブル・4歳）" width="76" height="76" loading="lazy"><i class="od y"></i></div><div class="nm"><b>べぺ</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d069.jpg" alt="らて（ポメラニアン・2歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>らて</b></div></div>
+            <div class="tile fac"><div class="ph"><div class="ph0">🏠</div><i class="st">店</i></div><div class="nm"><b>認定ドッグカフェ</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d075.jpg" alt="ウラン（ミックス・9歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>ウラン</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d078.jpg" alt="ケアリイ（ミックス・5歳）" width="76" height="76" loading="lazy"><i class="od y"></i></div><div class="nm"><b>ケアリイ</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d083.jpg" alt="ココ（チワワ・1歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>ココ</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d084.jpg" alt="ココア（ポメラニアン・1歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>ココア</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d088.jpg" alt="コロ（柴犬・10歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>コロ</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d090.jpg" alt="サラ（ポメラニアン・3歳）" width="76" height="76" loading="lazy"><i class="od n"></i><span class="hrt">♥</span></div><div class="nm"><b>サラ</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d093.jpg" alt="チョコ（チワワ・2歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>チョコ</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d096.jpg" alt="ティティ（トイプードル・5歳）" width="76" height="76" loading="lazy"><i class="od y"></i></div><div class="nm"><b>ティティ</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d098.jpg" alt="デンデ（パグ・6歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>デンデ</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d100.jpg" alt="ノア（ミックス・4歳）" width="76" height="76" loading="lazy"><i class="od n"></i></div><div class="nm"><b>ノア</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d105.jpg" alt="ベガ（コーギー・2歳）" width="76" height="76" loading="lazy"><i class="od y"></i></div><div class="nm"><b>ベガ</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d110.jpg" alt="メルモ（ヨークシャテリア・8歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>メルモ</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d111.jpg" alt="モカ（ダックス・9歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>モカ</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d114.jpg" alt="ラルク（チワワ・4歳）" width="76" height="76" loading="lazy"><i class="od y"></i></div><div class="nm"><b>ラルク</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d115.jpg" alt="ルカ（トイプードル・7歳）" width="76" height="76" loading="lazy"><i class="od y"></i></div><div class="nm"><b>ルカ</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d117.jpg" alt="ひかり（チワワ・3歳）" width="76" height="76" loading="lazy"><i class="od g"></i><span class="hrt">♥</span></div><div class="nm"><b>ひかり</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d122.jpg" alt="ボン（チワワ・5歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>ボン</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d126.jpg" alt="さち（チワワ・4歳）" width="76" height="76" loading="lazy"><i class="od n"></i><span class="hrt">♥</span></div><div class="nm"><b>さち</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d131.jpg" alt="あい（チワワ・6歳）" width="76" height="76" loading="lazy"><i class="od y"></i></div><div class="nm"><b>あい</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d135.jpg" alt="さくら（チワワ・3歳）" width="76" height="76" loading="lazy"><i class="od y"></i><span class="hrt">♥</span></div><div class="nm"><b>さくら</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d139.jpg" alt="はな（チワワ・2歳）" width="76" height="76" loading="lazy"><i class="od y"></i></div><div class="nm"><b>はな</b></div></div>
+          </div>
+        </div>
+        <button type="button" class="scrollbtn" aria-label="一覧を下へスクロール">下へスクロール <span aria-hidden="true">↓</span></button>
+        <div class="ph-tabs"><div><svg><use href="#i-home"/></svg>ホーム</div><div><svg><use href="#i-rec"/></svg>記録</div><div class="on"><svg><use href="#i-people"/></svg>交流</div><div><svg><use href="#i-shield"/></svg>あんしん</div><div><svg><use href="#i-gear"/></svg>設定</div></div>
+      </div></div>
+
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="f1">
+  <div class="in feat">
+    <div class="feat-txt">
+      <span class="num">POINT 1</span>
+      <h2>はじめましてでも、<br>事前に知って安心。</h2>
+      <p class="body">近くにいるわんちゃんのプロフィールが見られます。ドッグランではじめましての前から確認ができ、安心できます。性格や、好きなこと・苦手なことを先に知っておけば、はじめて会う子とも落ち着いて過ごせます。</p>
+      <ul>
+        <li>近くのわんちゃんを一覧でチェック</li>
+        <li>性格・好きなこと・苦手なことが分かる</li>
+        <li>気になる子に「挨拶」を送れる</li>
+      </ul>
+      <p class="note">※プロフィールは、相手が書いている場合に表示されます。</p>
+    </div>
+    <div class="feat-shot">
+      <div class="pair">
+        <div class="phone"><div class="scr">
+          <div class="ph-hd">近くのわんちゃん<span class="loc">未挨拶だけ</span></div>
+          <div class="ph-bd scroll" tabindex="0" aria-label="近くのわんちゃん一覧（スクロールできます）">
+          <div class="tgrid">
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d139.jpg" alt="はな（チワワ・2歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>はな</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d135.jpg" alt="さくら（チワワ・3歳）" width="76" height="76" loading="lazy"><i class="od y"></i><span class="hrt">♥</span></div><div class="nm"><b>さくら</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d131.jpg" alt="あい（チワワ・6歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>あい</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d126.jpg" alt="さち（チワワ・4歳）" width="76" height="76" loading="lazy"><i class="od g"></i><span class="hrt">♥</span></div><div class="nm"><b>さち</b></div></div>
+            <div class="tile fac"><div class="ph"><div class="ph0">🏠</div><i class="st">店</i></div><div class="nm"><b>認定ドッグラン</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d122.jpg" alt="ボン（チワワ・5歳）" width="76" height="76" loading="lazy"><i class="od n"></i></div><div class="nm"><b>ボン</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d117.jpg" alt="ひかり（チワワ・3歳）" width="76" height="76" loading="lazy"><i class="od n"></i><span class="hrt">♥</span></div><div class="nm"><b>ひかり</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d115.jpg" alt="ルカ（トイプードル・7歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>ルカ</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d114.jpg" alt="ラルク（チワワ・4歳）" width="76" height="76" loading="lazy"><i class="od y"></i></div><div class="nm"><b>ラルク</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d111.jpg" alt="モカ（ダックス・9歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>モカ</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d110.jpg" alt="メルモ（ヨークシャテリア・8歳）" width="76" height="76" loading="lazy"><i class="od y"></i></div><div class="nm"><b>メルモ</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d105.jpg" alt="ベガ（コーギー・2歳）" width="76" height="76" loading="lazy"><i class="od y"></i></div><div class="nm"><b>ベガ</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d100.jpg" alt="ノア（ミックス・4歳）" width="76" height="76" loading="lazy"><i class="od y"></i></div><div class="nm"><b>ノア</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d098.jpg" alt="デンデ（パグ・6歳）" width="76" height="76" loading="lazy"><i class="od y"></i></div><div class="nm"><b>デンデ</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d096.jpg" alt="ティティ（トイプードル・5歳）" width="76" height="76" loading="lazy"><i class="od y"></i></div><div class="nm"><b>ティティ</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d093.jpg" alt="チョコ（チワワ・2歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>チョコ</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d090.jpg" alt="サラ（ポメラニアン・3歳）" width="76" height="76" loading="lazy"><i class="od g"></i><span class="hrt">♥</span></div><div class="nm"><b>サラ</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d088.jpg" alt="コロ（柴犬・10歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>コロ</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d084.jpg" alt="ココア（ポメラニアン・1歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>ココア</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d083.jpg" alt="ココ（チワワ・1歳）" width="76" height="76" loading="lazy"><i class="od y"></i></div><div class="nm"><b>ココ</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d078.jpg" alt="ケアリイ（ミックス・5歳）" width="76" height="76" loading="lazy"><i class="od y"></i></div><div class="nm"><b>ケアリイ</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d075.jpg" alt="ウラン（ミックス・9歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>ウラン</b></div></div>
+            <div class="tile fac"><div class="ph"><div class="ph0">🏠</div><i class="st">店</i></div><div class="nm"><b>認定ドッグカフェ</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d069.jpg" alt="らて（ポメラニアン・2歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>らて</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d066.jpg" alt="べぺ（フレンチブル・4歳）" width="76" height="76" loading="lazy"><i class="od y"></i></div><div class="nm"><b>べぺ</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d061.jpg" alt="ひな（ポメラニアン・3歳）" width="76" height="76" loading="lazy"><i class="od y"></i></div><div class="nm"><b>ひな</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d058.jpg" alt="となり（チワワ・2歳）" width="76" height="76" loading="lazy"><i class="od n"></i></div><div class="nm"><b>となり</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d053.jpg" alt="ちゃむ（トイプードル・1歳）" width="76" height="76" loading="lazy"><i class="od n"></i></div><div class="nm"><b>ちゃむ</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d051.jpg" alt="こあら（チワワ・4歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>こあら</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d049.jpg" alt="ぐり（グリフォン・7歳）" width="76" height="76" loading="lazy"><i class="od n"></i></div><div class="nm"><b>ぐり</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d047.jpg" alt="ぎしみ（シーズー・8歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>ぎしみ</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d044.jpg" alt="きき（ダックス・6歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>きき</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d042.jpg" alt="いくら（チワワ・3歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>いくら</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d041.jpg" alt="PIPI（チワワ・2歳）" width="76" height="76" loading="lazy"><i class="od n"></i></div><div class="nm"><b>PIPI</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d024.jpg" alt="ロイ（キャバリア・4歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>ロイ</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d019.jpg" alt="ポン太（フレンチブル・5歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>ポン太</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d017.jpg" alt="ポメ吉（ポメラニアン・3歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>ポメ吉</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d015.jpg" alt="アッシュ（シェルティ・6歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>アッシュ</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d012.jpg" alt="ゆず（柴犬・2歳）" width="76" height="76" loading="lazy"><i class="od y"></i></div><div class="nm"><b>ゆず</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d008.jpg" alt="ぷっこ（ボストンテリア・5歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>ぷっこ</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d006.jpg" alt="ぶったん（MIX・3歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>ぶったん</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d004.jpg" alt="ぬぅ（シープドッグ・3歳）" width="76" height="76" loading="lazy"><i class="od g"></i></div><div class="nm"><b>ぬぅ</b></div></div>
+            <div class="tile"><div class="ph"><img src="img/dogs/t/d001.jpg" alt="かつお（ダックス・4歳）" width="76" height="76" loading="lazy"><i class="od y"></i></div><div class="nm"><b>かつお</b></div></div>
+          </div>
+        </div>
+        <button type="button" class="scrollbtn" aria-label="一覧を下へスクロール">下へスクロール <span aria-hidden="true">↓</span></button>
+        <div class="ph-tabs"><div><svg><use href="#i-home"/></svg>ホーム</div><div><svg><use href="#i-rec"/></svg>記録</div><div class="on"><svg><use href="#i-people"/></svg>交流</div><div><svg><use href="#i-shield"/></svg>あんしん</div><div><svg><use href="#i-gear"/></svg>設定</div></div>
+        </div></div>
+        <div class="phone"><div class="scr">
+          <div class="ph-hd"><span class="back">‹ 戻る</span>プロフィール</div>
+          <div class="ph-bd">
+            <div class="pf-photo"><img src="img/dogs/d069.jpg" alt="らて（ポメラニアン）" width="240" height="170" loading="lazy"></div>
+            <p class="pf-name">らて</p>
+            <p class="pf-sub">ポメラニアン</p>
+            <div class="pf-box"><h4>性格</h4><span class="chip n">人なつっこい</span><span class="chip n">マイペース</span></div>
+            <div class="pf-box"><h4>好きなこと</h4><span class="chip g">おいかけっこ</span><span class="chip g">ボール遊び</span></div>
+            <div class="pf-box"><h4>苦手なこと</h4><span class="chip r">急に近づかれる</span></div>
+            <div class="cta">👋 挨拶を送る</div>
+          </div>
+        </div></div>
+      </div>
+      <p class="cap">※アプリ画面をもとにした表示例です</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="f2">
+  <div class="in feat rev">
+    <div class="feat-txt">
+      <span class="num">POINT 2</span>
+      <h2>お出かけの目安が、<br>簡単にわかる。</h2>
+      <p class="body">「今日は散歩に行って大丈夫？」の迷いに答えます。今いる場所の暑さ・寒さ、足元（路面）、雨や雪を、色と言葉でひと目で確認できます。</p>
+      <ul>
+        <li>お散歩に向いた時間帯が色で分かる</li>
+        <li>暑さ・寒さ、足元の目安を表示</li>
+        <li>雨・雪・風、日の入りまで確認</li>
+      </ul>
+      <p class="note">※気象データをもとにした目安です。愛犬の様子を見ながらご判断ください。</p>
+    </div>
+    <div class="feat-shot">
+      <div class="phone"><div class="scr" style="height:auto;background:#FFF1E0">
+        <img class="outing-img" src="img/outing.png" alt="お出かけ目安の画面。札幌市の「快適」表示と、お散歩に向く時間帯のグラフ" width="375" height="700" loading="lazy">
+      </div></div>
+      <p class="cap">実際のアプリ画面（札幌の表示例）</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="f3">
+  <div class="in feat">
+    <div class="feat-txt">
+      <span class="num">POINT 3</span>
+      <h2>ワクチンの接種証明、<br>もうなくさない。</h2>
+      <p class="body">紙の証明書を写真でアプリに保管。ドッグランや旅行先で「証明書、どこだっけ？」と探す必要がありません。必要なときに、スマホからサッと見せられます。</p>
+      <ul>
+        <li>証明書を撮影して、スマホに保管</li>
+        <li>接種日と有効期限をまとめて確認</li>
+        <li>ドッグランの受付でもすぐ提示</li>
+      </ul>
+      <p class="note">※施設によって提示の方法が異なる場合があります。</p>
+    </div>
+    <div class="feat-shot">
+      <div class="phone"><div class="scr">
+        <div class="ph-hd"><span class="back">‹ 戻る</span>接種証明</div>
+        <div class="ph-bd">
+          <div class="pf-box" style="display:flex;gap:10px;align-items:center"><img src="img/dogs/t/d044.jpg" alt="きき（ダックス）" width="46" height="46" style="width:46px;height:46px;border-radius:50%;object-fit:cover" loading="lazy"><div><b style="font-size:14px">きき</b><div style="font-size:11px;color:var(--sub)">ダックス</div></div></div>
+          <div class="cert"><h4>狂犬病予防接種<span class="ok-badge">確認ずみ</span></h4><dl><dt>接種日</dt><dd>2026年4月12日</dd><dt>有効期限</dt><dd>2027年4月11日</dd></dl></div>
+          <div class="cert"><h4>混合ワクチン<span class="ok-badge">確認ずみ</span></h4><dl><dt>接種日</dt><dd>2026年6月3日</dd><dt>有効期限</dt><dd>2027年6月2日</dd></dl>
+            <div class="paper"><b>ワクチン接種証明書</b>（写真で保管）<i></i><i class="s"></i><i></i></div>
+          </div>
+        </div>
+        <div class="ph-tabs"><div><svg><use href="#i-home"/></svg>ホーム</div><div><svg><use href="#i-rec"/></svg>記録</div><div><svg><use href="#i-people"/></svg>交流</div><div class="on"><svg><use href="#i-shield"/></svg>あんしん</div><div><svg><use href="#i-gear"/></svg>設定</div></div>
+      </div></div>
+      <p class="cap">※アプリ画面をもとにした表示例です</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="f4">
+  <div class="in feat rev">
+    <div class="feat-txt">
+      <span class="num">POINT 4</span>
+      <h2>イザというとき、<br>サッと確認できる。</h2>
+      <p class="body">地震、迷子、誤食。もしもの時に慌てないよう、必要な情報を「あんしん」タブにまとめました。普段から開いて、備えておけます。</p>
+      <ul>
+        <li>地震・防災の情報と避難所さがし</li>
+        <li>誤食・中毒の危険物を名前で検索</li>
+        <li>迷子のときのさがしポスターづくり</li>
+        <li>かかりつけ・救急の連絡先も</li>
+      </ul>
+      <p class="note">※医療や災害時の判断を保証するものではありません。</p>
+    </div>
+    <div class="feat-shot">
+      <div class="phone"><div class="scr">
+        <div class="ph-hd">あんしん</div>
+        <div class="ph-bd">
+          <div class="bigok"><b>接種証明：ドッグランOK</b><small>モモ ・ 狂犬病・混合ワクチン</small></div>
+          <div class="anrow red"><span class="ic"><svg><use href="#i-quake"/></svg></span><div><b>地震・防災</b><small>避難所をさがす／防災の準備</small></div></div>
+          <div class="anrow"><span class="ic"><svg><use href="#i-bowl"/></svg></span><div><b>誤食・中毒の危険物</b><small>チョコ、ぶどう… 名前で調べる</small></div></div>
+          <div class="anrow"><span class="ic"><svg><use href="#i-search"/></svg></span><div><b>迷子になったら</b><small>さがしポスターをつくる</small></div></div>
+          <div class="anrow"><span class="ic"><svg><use href="#i-pin"/></svg></span><div><b>かかりつけ・救急</b><small>近くの動物病院をさがす</small></div></div>
+          <div class="anrow"><span class="ic"><svg><use href="#i-book"/></svg></span><div><b>お世話メモ</b><small>預け先に渡す1枚をつくる</small></div></div>
+        </div>
+        <div class="ph-tabs"><div><svg><use href="#i-home"/></svg>ホーム</div><div><svg><use href="#i-rec"/></svg>記録</div><div><svg><use href="#i-people"/></svg>交流</div><div class="on"><svg><use href="#i-shield"/></svg>あんしん</div><div><svg><use href="#i-gear"/></svg>設定</div></div>
+      </div></div>
+      <p class="cap">※アプリ画面をもとにした表示例です</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="all">
+  <div class="in">
+    <div class="sec-head"><h2>その他にも、使える機能がいっぱい</h2><p>毎日の記録から、お出かけ、もしもの備えまで。</p></div>
+
+    <p class="fgroup">交流</p>
+    <div class="grid">
+      <div class="fcard"><span class="ic"><svg><use href="#i-people"/></svg></span><h3>近くのわんちゃん</h3><p>近くのわんちゃんのプロフィールを見て、挨拶を送れます。</p></div>
+      <div class="fcard"><span class="ic"><svg><use href="#i-chat"/></svg></span><h3>お友達・メッセージ</h3><p>お互いに挨拶するとお友達に。メッセージのやり取りができます。</p></div>
+      <div class="fcard"><span class="ic"><svg><use href="#i-qr"/></svg></span><h3>デジタル名刺</h3><p>QRコードで、アプリを使っていない相手にも愛犬を紹介できます。</p></div>
+      <div class="fcard"><span class="ic"><svg><use href="#i-heart"/></svg></span><h3>ホンネの吠え場</h3><p>要望や不満を匿名で投稿。運営が確認し、対応状況を公開します。</p></div>
+    </div>
+
+    <p class="fgroup">毎日の記録・健康</p>
+    <div class="grid">
+      <div class="fcard"><span class="ic"><svg><use href="#i-rec"/></svg></span><h3>お散歩・体調の記録</h3><p>元気・普通・具合が悪いのワンタップ記録。ごはん・体重・お薬も。</p></div>
+      <div class="fcard"><span class="ic"><svg><use href="#i-chart"/></svg></span><h3>グラフと獣医レポート</h3><p>記録はグラフに。動物病院でそのまま見せられるレポートにまとまります。</p></div>
+      <div class="fcard"><span class="ic"><svg><use href="#i-bell"/></svg></span><h3>お薬などの予定のお知らせ</h3><p>お薬などの予定を、通知でお知らせします。</p></div>
+      <div class="fcard"><span class="ic"><svg><use href="#i-card"/></svg></span><h3>ワクチン接種証明</h3><p>証明書を写真で保管。有効期限もまとめて確認できます。</p></div>
+      <div class="fcard"><span class="ic"><svg><use href="#i-family"/></svg></span><h3>家族で共有</h3><p>家族で愛犬の情報を共有できます。</p></div>
+      <div class="fcard"><span class="ic"><svg><use href="#i-book"/></svg></span><h3>犬種ガイド・性格診断</h3><p>犬種ごとの特徴を調べたり、愛犬の性格をチェックできます。</p></div>
+    </div>
+
+    <p class="fgroup">お出かけ</p>
+    <div class="grid">
+      <div class="fcard"><span class="ic"><svg><use href="#i-sun"/></svg></span><h3>今日のお出かけ目安</h3><p>気温・暑さ・降水などから、お散歩に向いた時間帯をお知らせ。</p></div>
+      <div class="fcard"><span class="ic"><svg><use href="#i-pin"/></svg></span><h3>認定パートナー施設でチェックイン</h3><p>ドッグランやペットショップでチェックインしてポイントを貯めます。</p></div>
+      <div class="fcard"><span class="ic"><svg><use href="#i-trophy"/></svg></span><h3>ランキング・称号</h3><p>チェックインで称号バッジを集める楽しみもあります。</p></div>
+      <div class="fcard"><span class="ic"><svg><use href="#i-star"/></svg></span><h3>イベント・道の駅スタンプ</h3><p>お出かけ先やイベント情報の確認、スタンプ集めを楽しめます。</p></div>
+      <div class="fcard"><span class="ic"><svg><use href="#i-camera"/></svg></span><h3>思い出づくり</h3><p>写真のプリントや、1年のふりかえりをカードにできます。</p></div>
+    </div>
+
+    <p class="fgroup">もしもの備え</p>
+    <div class="grid">
+      <div class="fcard"><span class="ic"><svg><use href="#i-quake"/></svg></span><h3>地震・気象警報</h3><p>一定規模以上の地震で、震源と震度をお知らせ。声をかけ合う機能も。</p></div>
+      <div class="fcard"><span class="ic"><svg><use href="#i-shield"/></svg></span><h3>避難所さがし・防災手帳</h3><p>近くの指定緊急避難場所を検索。愛犬との避難の備えリストも。</p></div>
+      <div class="fcard"><span class="ic"><svg><use href="#i-bear"/></svg></span><h3>ヒグマ・融雪剤の安全情報</h3><p>お散歩中に気をつけたい情報を、地域のユーザー同士で共有。</p></div>
+      <div class="fcard"><span class="ic"><svg><use href="#i-search"/></svg></span><h3>迷子さがし・ポスター</h3><p>迷子情報を投稿すると周辺に通知。ポスターもすぐ作れます。</p></div>
+      <div class="fcard"><span class="ic"><svg><use href="#i-bowl"/></svg></span><h3>誤食・中毒の危険物</h3><p>食べたものの名前から、危険かどうかを調べられます。</p></div>
+      <div class="fcard"><span class="ic"><svg><use href="#i-plus"/></svg></span><h3>かかりつけ・お世話メモ</h3><p>病院の連絡先や、預け先に渡すお世話メモをまとめられます。</p></div>
+    </div>
+    <p class="note" style="text-align:center;margin-top:20px">※機能は追加・変更されることがあります。一部の機能は、設定や条件により表示されない場合があります。</p>
+  </div>
+</section>
+
+<section class="sec alt" id="start">
+  <div class="in">
+    <div class="sec-head"><h2>利用は、かんたん</h2><p>ダウンロードして、わんちゃんを登録するだけ。</p></div>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h3>アプリを入れる</h3><p>ストアで「エゾわん」を検索して、ダウンロードします。</p></div>
+      <div class="step"><div class="n">2</div><h3>わんちゃんを登録</h3><p>名前・性別・犬種・誕生日を入れます。写真はあとからでも大丈夫です。</p></div>
+      <div class="step"><div class="n">3</div><h3>すぐに使える</h3><p>今日の記録をひとつつけたら、準備完了です。</p></div>
+    </div>
+    <div class="noreg">メールアドレスもパスワードも、会員登録も不要<small>ダウンロード無料。面倒な入力なしで、すぐに始められます。</small></div>
+  </div>
+</section>
+
+<section class="sec alt" id="privacy">
+  <div class="in">
+    <div class="spi">
+      <b>総務省「スマートフォン プライバシー イニシアティブ（SPI）」に準拠</b>
+      <p>取得する情報の項目や利用目的、外部への送信の内容、お問い合わせ窓口を、プライバシーポリシーではっきり示しています。<br><a href="/privacy/">プライバシーポリシーを見る</a>　<a href="/terms/">利用規約を見る</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="faq">
+  <div class="in">
+    <div class="sec-head"><h2>よくある質問</h2></div>
+    <div class="faq">
+      <details><summary>料金はかかりますか？</summary><p>ダウンロードは無料です。メールアドレスやパスワードの登録も必要ありません。</p></details>
+      <details><summary>犬を飼っていなくても使えますか？</summary><p>わんちゃんの登録をして使うアプリです。愛犬のいる方が対象です。</p></details>
+      <details><summary>iPhoneでもAndroidでも使えますか？</summary><p>どちらにも対応しています。App StoreまたはGoogle Playから入手できます。</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="dl" id="download">
+  <div class="in">
+    <h2>愛犬との毎日を、もっと安心に。</h2>
+    <p>ダウンロード無料・メールアドレス不要。いますぐ始められます。</p>
+    <div class="store">
+      <a class="btn" href="https://apps.apple.com/jp/app/id6796604381" rel="noopener noreferrer">App Storeで入手</a>
+      <a class="btn" href="https://play.google.com/store/apps/details?id=net.raigroup.ezowan" rel="noopener noreferrer">Google Playで入手</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="sfoot">
+  <div class="sfoot-in">
+    <div class="ft">
+      <div class="ft-brand">
+        <a href="/" aria-label="エゾわん！ トップへ"><img src="img/logo.png" alt="エゾわん！" width="120" height="50"></a>
+        <p>北海道の愛犬家のためのアプリ</p>
+        <a class="ft-ig" href="https://www.instagram.com/ezo_wan_hokkaido/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+      <nav aria-label="アプリについて"><h3>アプリについて</h3><a href="/About-EZO-WAN/">使い方ガイド</a><a href="/ezo-wan-point/">ポイントガイド</a></nav>
+      <nav aria-label="施設・事業者の方"><h3>施設・事業者の方</h3><a href="/Join-EZO-WAN/">認定パートナー施設 申込み</a><a href="/Advertisement/">宣伝・お知らせ掲載 申込み</a></nav>
+      <nav aria-label="規約・お問い合わせ"><h3>規約・お問い合わせ</h3><a href="/terms/">利用規約</a><a href="/privacy/">プライバシーポリシー</a><a href="/tokushoho/">特定商取引法に基づく表記</a><a href="mailto:ezo-wan@rai-group.net?subject=%E3%82%A8%E3%82%BE%E3%82%8F%E3%82%93%EF%BC%81%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B&amp;body=%E3%82%A8%E3%82%BE%E3%82%8F%E3%82%93%EF%BC%81%E9%81%8B%E5%96%B6%E4%BA%8B%E5%8B%99%E5%B1%80%20%E5%BE%A1%E4%B8%AD%0A%0A%E3%80%90%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B%E5%86%85%E5%AE%B9%E3%80%91%0A%EF%BC%88%E3%81%93%E3%81%93%E3%81%AB%E3%81%94%E8%A8%98%E5%85%A5%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%EF%BC%89%0A%0A%E3%80%90%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%88%E4%BB%BB%E6%84%8F%EF%BC%89%E3%80%91%0A%0A%E3%80%90%E3%81%94%E5%88%A9%E7%94%A8%E3%81%AE%E6%A9%9F%E7%A8%AE%EF%BC%88iPhone%20%2F%20Android%EF%BC%89%E3%80%91%0A%0A">お問い合わせ</a></nav>
+    </div>
+    <p class="ft-copy">© RAI GROUP ／ 運営：RAI GROUP</p>
+  </div>
+</footer>
+<script>
+(function(){
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('.scr').forEach(function(scr){
+    var bd=scr.querySelector('.ph-bd.scroll'),btn=scr.querySelector('.scrollbtn');
+    if(!bd||!btn)return;
+    function upd(){btn.classList.toggle('hide',bd.scrollTop+bd.clientHeight>=bd.scrollHeight-6);}
+    btn.addEventListener('click',function(){bd.scrollBy({top:Math.round(bd.clientHeight*0.8),behavior:reduce?'auto':'smooth'});});
+    bd.addEventListener('scroll',upd,{passive:true});upd();
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="canonical" href="https://pet.rai-group.net/Advertisement/">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>広告・宣伝掲載のお申し込み（お知らせ掲載）｜エゾわん！</title>
+<meta name="description" content="エゾわん！アプリのお知らせ欄に、イベントやキャンペーン、新サービスの告知を掲載できます。北海道の愛犬家に届く、広告・宣伝掲載の依頼フォームです。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Zen+Maru+Gothic:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo:wght@400&family=Figtree:wght@400;600;700&display=swap');
+
+:root {
+  --color-bg: #f5ead8;
+  --color-surface: #ebddc5;
+  --color-text: #201e1d;
+  --color-accent: #c67139;
+  --color-accent-2: #7a8a5e;
+  --color-divider: color-mix(in srgb, #201e1d 16%, transparent);
+
+  --color-neutral-100: #f9f4ed;
+  --color-neutral-200: #eee7db;
+  --color-neutral-300: #dcd3c4;
+  --color-neutral-400: #c0b6a5;
+  --color-neutral-500: #a19786;
+  --color-neutral-600: #82796a;
+  --color-neutral-700: #645c50;
+  --color-neutral-800: #474238;
+  --color-neutral-900: #2e2b25;
+
+  --color-accent-100: #fff2eb;
+  --color-accent-200: #ffe1d0;
+  --color-accent-300: #ffc6a5;
+  --color-accent-400: #f6a06b;
+  --color-accent-500: #d67f48;
+  --color-accent-600: #b2622d;
+  --color-accent-700: #8c491a;
+  --color-accent-800: #643312;
+  --color-accent-900: #402310;
+
+  --color-accent-2-100: #f0fae1;
+  --color-accent-2-200: #e1eecc;
+  --color-accent-2-300: #ccdbb2;
+  --color-accent-2-400: #aebf92;
+  --color-accent-2-500: #8fa073;
+  --color-accent-2-600: #728157;
+  --color-accent-2-700: #56633f;
+  --color-accent-2-800: #3d472b;
+  --color-accent-2-900: #272e1b;
+
+  --font-heading: "Caprasimo", system-ui, sans-serif;
+  --font-heading-weight: 400;
+  --font-body: "Figtree", system-ui, sans-serif;
+
+  --space-1: 4.4px;
+  --space-2: 8.8px;
+  --space-3: 13.2px;
+  --space-4: 17.6px;
+  --space-6: 26.4px;
+  --space-8: 35.2px;
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 28px;
+
+  --shadow-sm: 0 1px 2px color-mix(in srgb, #2e2b25 14%, transparent);
+  --shadow-md: 0 3px 10px color-mix(in srgb, #2e2b25 16%, transparent);
+  --shadow-lg: 0 12px 32px color-mix(in srgb, #2e2b25 22%, transparent);
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+}
+h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: var(--font-heading-weight); }
+
+.washed{filter:saturate(0.6) contrast(0.85) brightness(1.1) opacity(0.94)}
+
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; font-size: 15px; line-height: 1.55; font-weight: 400; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading); font-weight: var(--font-heading-weight);
+  line-height: 1.12; letter-spacing: -0.015em; margin: 0 0 var(--space-2);
+}
+h1 { font-size: 42px; }
+h2 { font-size: 32px; }
+h3 { font-size: 25px; }
+h4 { font-size: 20px; }
+h5 { font-size: 16px; }
+h6 { font-size: 13px; }
+h6 { letter-spacing: 0.08em; text-transform: uppercase; }
+p { margin: 0 0 var(--space-3); }
+a { color: var(--color-accent); text-underline-offset: 3px; }
+img { display: block; max-width: 100%; }
+figure { margin: 0; }
+figcaption {
+  font-size: 11px; margin-top: var(--space-1);
+  color: color-mix(in srgb, var(--color-text) 55%, transparent);
+}
+.text-muted { color: color-mix(in srgb, var(--color-text) 55%, transparent); }
+:focus { outline: none; }
+:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+::selection { background: color-mix(in srgb, var(--color-accent) 30%, transparent); }
+
+.hr {
+  height: 1px; border: 0; margin: var(--space-4) 0;
+  background: var(--color-divider);
+}
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  cursor: pointer; text-decoration: none;
+  font-family: var(--font-heading); font-weight: var(--font-heading-weight);
+  font-size: 14px; line-height: 1.2; color: var(--color-text); 
+  background: transparent; border: 1px solid transparent;
+  padding: var(--space-2) calc(var(--space-3) * 1.2);
+  border-radius: var(--radius-md);
+}
+.btn svg { display: block; }
+.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn-primary { background: var(--color-accent); color: var(--color-bg); }
+.btn-primary:hover { background: var(--color-accent-600); }
+.btn-primary:active { background: var(--color-accent-700); }
+.btn-secondary { border-color: var(--color-divider); }
+.btn-secondary:hover { background: color-mix(in srgb, var(--color-text) 7%, transparent); }
+.btn-secondary:active { background: color-mix(in srgb, var(--color-text) 14%, transparent); }
+.btn-ghost { color: var(--color-accent); padding-inline: var(--space-1); }
+.btn-ghost:hover { background: color-mix(in srgb, var(--color-accent) 10%, transparent); }
+.btn-ghost:active { background: color-mix(in srgb, var(--color-accent) 18%, transparent); }
+.btn-icon { width: 36px; height: 36px; padding: 0; }
+.btn-block { width: 100%; margin-top: var(--space-2); }
+
+.field > label {
+  display: block; font-size: 12px; margin-bottom: 5px;
+  color: color-mix(in srgb, var(--color-text) 70%, transparent);
+}
+.input {
+  width: 100%; min-height: 36px; padding: 6px 10px; font: inherit;
+  font-size: 14px; color: var(--color-text); caret-color: var(--color-accent);
+  background: var(--color-surface);
+  border: 1px solid var(--color-divider); border-radius: var(--radius-md);
+}
+.input:hover { border-color: color-mix(in srgb, var(--color-text) 45%, transparent); }
+.input:focus-visible { border-color: var(--color-accent); outline-offset: 0; }
+textarea.input { min-height: 90px; resize: vertical; }
+.radio { display: inline-flex; align-items: center; gap: 8px; cursor: pointer; font-size: 14px; }
+.radio input, .seg-opt input {
+  position: absolute; opacity: 0; width: 0; height: 0; pointer-events: none;
+}
+.radio .dot {
+  width: 16px; height: 16px; flex: none; border-radius: 50%;
+  border: 1.5px solid var(--color-divider);
+}
+.radio:hover .dot { border-color: var(--color-accent); }
+.radio input:checked + .dot {
+  border-color: var(--color-accent); background: var(--color-accent);
+  box-shadow: inset 0 0 0 4px var(--color-bg);
+}
+.radio input:focus-visible + .dot { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+.seg {
+  display: inline-flex; overflow: hidden;
+  border: 1px solid var(--color-divider); border-radius: var(--radius-md);
+}
+.seg-opt {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 7px 12px; font-size: 13px; cursor: pointer;
+}
+.seg-opt + .seg-opt { border-left: 1px solid var(--color-divider); }
+.seg-opt:has(input:checked) { background: var(--color-accent); color: var(--color-bg); }
+.seg-opt:not(:has(input:checked)):hover { background: color-mix(in srgb, var(--color-text) 7%, transparent); }
+.seg-opt:has(input:focus-visible) { outline: 2px solid var(--color-accent); outline-offset: -2px; }
+
+.card {
+  display: flex; flex-direction: column; gap: var(--space-2);
+  padding: var(--space-3); border-radius: var(--radius-md); background: var(--color-surface);
+}
+.card-kicker { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent); }
+.card-title {
+  font-family: var(--font-heading); font-weight: var(--font-heading-weight);
+  font-size: 17px; line-height: 1.2;
+}
+.card-body { margin: 0; font-size: 13px; opacity: 0.8; flex: 1; }
+.card-meta {
+  display: flex; align-items: center; gap: 6px; font-size: 11px;
+  color: color-mix(in srgb, var(--color-text) 50%, transparent);
+}
+.elev-sm { box-shadow: var(--shadow-sm); }
+.elev-md { box-shadow: var(--shadow-md); }
+.elev-lg { box-shadow: var(--shadow-lg); }
+
+.tag {
+  display: inline-flex; align-items: center; font-size: 11px;
+  letter-spacing: 0.02em; padding: 3px 10px;
+  border-radius: calc(var(--radius-md) * 0.75);
+}
+.tag-accent { background: var(--color-accent-100); color: var(--color-accent-800); }
+.tag-accent-2 { background: var(--color-accent-2-100); color: var(--color-accent-2-800); }
+.tag-neutral { background: var(--color-neutral-100); color: var(--color-neutral-800); }
+.tag-outline { border: 1px solid var(--color-accent); color: var(--color-accent); }
+
+.nav {
+  display: flex; align-items: center; gap: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  border-bottom: none;
+}
+.nav-brand {
+  font-family: var(--font-heading); font-weight: var(--font-heading-weight);
+  font-size: 18px; margin-right: auto;
+}
+.nav a { color: inherit; text-decoration: none; font-size: 14px; }
+.nav a:hover, .nav a[aria-current='page'] { color: var(--color-accent); }
+
+.table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.table th {
+  text-align: left; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
+  color: color-mix(in srgb, var(--color-text) 60%, transparent);
+  padding: var(--space-2); border-bottom: 1px solid var(--color-divider);
+}
+.table td {
+  padding: var(--space-2);
+  border-bottom: 1px solid color-mix(in srgb, var(--color-text) 8%, transparent);
+}
+.table tbody tr:hover { background: color-mix(in srgb, var(--color-text) 4%, transparent); }
+
+.dialog-backdrop {
+  position: fixed; inset: 0; display: grid; place-items: center;
+  padding: var(--space-4);
+  background: color-mix(in srgb, var(--color-neutral-900) 50%, transparent);
+}
+.dialog {
+  width: min(440px, 100%); display: flex; flex-direction: column; gap: var(--space-3);
+  padding: var(--space-4); border-radius: var(--radius-lg);
+  background: var(--color-surface); box-shadow: var(--shadow-lg);
+}
+.dialog-title {
+  font-family: var(--font-heading); font-weight: var(--font-heading-weight);
+  font-size: 20px;
+}
+.dialog-body { font-size: 14px; opacity: 0.85; }
+.dialog-actions { display: flex; justify-content: flex-end; gap: var(--space-2); margin-top: var(--space-2); }
+
+.card, .dialog { border-radius: calc(var(--radius-lg) * 1.15); }
+.btn, .tag, .seg, .input { border-radius: 999px; }
+.input { padding-inline: 14px; }
+
+  html { scroll-behavior: smooth; }
+  h1, h2, p, span, label, li { word-break: normal; overflow-wrap: anywhere; line-break: strict; text-wrap: pretty; }
+  #news-form label.opt { word-break: auto-phrase; }
+  #news-form label.opt span, #news-form .nav-btn, #news-form .ghost-btn { white-space: nowrap; }
+  body { margin: 0; background: var(--color-bg); }
+  a { color: var(--color-accent-700); text-decoration: none; }
+  a:hover { color: var(--color-accent-600); }
+  #news-form label.opt:has(input:checked) { border-color: var(--color-accent) !important; background: var(--color-accent-100) !important; font-weight: 700; }
+  #news-form label.opt:hover { border-color: var(--color-accent-400) !important; }
+  #news-form .input:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+  #news-form textarea.input { border-radius: 20px !important; padding: 16px 18px !important; line-height: 1.85; }
+  #news-form .input[aria-invalid="true"] { border-color: var(--color-accent) !important; background: var(--color-accent-100); }
+  #news-form .nav-btn:hover { background: var(--color-accent-600); }
+  #news-form .nav-btn:disabled { opacity: .45; cursor: not-allowed; }
+  #news-form .ghost-btn:hover { background: var(--color-accent-100); }
+  .terms-box::-webkit-scrollbar { width: 10px; }
+  .terms-box::-webkit-scrollbar-thumb { background: var(--color-accent-300); border-radius: 999px; }
+  @media (max-width: 900px) { h1 { font-size: 38px !important; } h2 { font-size: 27px !important; } }
+  @media (max-width: 640px) { .deco { display: none !important; } h1 { font-size: 31px !important; } h2 { font-size: 24px !important; } #news-form { padding: 24px 18px 26px !important; } }
+</style>
+<script>
+window.EZO_NEWS_FORM = {
+  action: "https://docs.google.com/forms/d/e/1FAIpQLScY4YkPDUvNdK3LDxcnfTTEcD3GrosORwpWYmABC5P5j51LDQ/formResponse",
+  viewform: "https://docs.google.com/forms/d/e/1FAIpQLScY4YkPDUvNdK3LDxcnfTTEcD3GrosORwpWYmABC5P5j51LDQ/viewform",
+  entries: {
+    person: "entry.512512101",
+    org: "entry.1523803655",
+    email: "entry.216787847",
+    tel: "entry.1636805114",
+    period: "entry.765084064",
+    area: "entry.1827195585",
+    title: "entry.836712288",
+    pr: "entry.364955479",
+    event: "entry.356309711",
+    place: "entry.738229200",
+    plan: "entry.178774388",
+    payment: "entry.1910917146",
+    agree: "entry.1133603719"
+  }
+};
+(function () {
+  function init() {
+    var form = document.getElementById("news-form");
+    if (!form || form.dataset.bound) { return; }
+    form.dataset.bound = "1";
+
+    var cfg = window.EZO_NEWS_FORM;
+    var note = document.getElementById("news-note");
+    var done = document.getElementById("news-done");
+    var steps = [].slice.call(form.querySelectorAll("[data-step]"));
+    var dots = [].slice.call(document.querySelectorAll("[data-dot]"));
+    var current = 0;
+
+    function scrollToForm() {
+      var card = document.getElementById("form");
+      if (card) { window.scrollTo({ top: card.getBoundingClientRect().top + window.scrollY - 24, behavior: "smooth" }); }
+    }
+    function show(n) {
+      current = n;
+      steps.forEach(function (s, i) { s.style.display = i === n ? "block" : "none"; });
+      dots.forEach(function (d, i) {
+        var on = i <= n;
+        d.style.background = on ? "var(--color-accent)" : "var(--color-neutral-200)";
+        d.style.color = on ? "#fff" : "var(--color-neutral-600)";
+      });
+      if (note) { note.textContent = "送信内容は掲載とご連絡のためだけに利用します。"; note.style.color = "var(--color-neutral-700)"; }
+    }
+    function validate(n) {
+      var bad = null;
+      steps[n].querySelectorAll("[required]").forEach(function (el) {
+        var empty = !el.value.trim();
+        el.setAttribute("aria-invalid", empty ? "true" : "false");
+        if (empty && !bad) { bad = el; }
+      });
+      if (bad) {
+        if (note) { note.textContent = "必須項目をご記入ください。"; note.style.color = "var(--color-accent-800)"; }
+        bad.focus();
+        return false;
+      }
+      return true;
+    }
+
+    form.querySelectorAll("[data-next]").forEach(function (btn) {
+      btn.addEventListener("click", function () { if (validate(current)) { show(current + 1); scrollToForm(); } });
+    });
+    form.querySelectorAll("[data-prev]").forEach(function (btn) {
+      btn.addEventListener("click", function () { show(current - 1); scrollToForm(); });
+    });
+
+    var termsToggle = document.getElementById("terms-toggle");
+    var termsBody = document.getElementById("terms-body");
+    if (termsToggle && termsBody) {
+      termsToggle.addEventListener("click", function () {
+        var open = termsBody.style.display === "block";
+        termsBody.style.display = open ? "none" : "block";
+        termsToggle.textContent = open ? "規約全文を読む" : "規約全文を閉じる";
+      });
+    }
+    var supportToggle = document.getElementById("support-toggle");
+    var supportBody = document.getElementById("support-body");
+    if (supportToggle && supportBody) {
+      supportToggle.addEventListener("click", function () {
+        var open = supportBody.style.display === "block";
+        supportBody.style.display = open ? "none" : "block";
+        supportToggle.textContent = open ? "掲載区分の詳細を読む" : "掲載区分の詳細を閉じる";
+      });
+    }
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (!validate(current)) { return; }
+      var groups = [
+        { key: "plan", label: "掲載区分をお選びください。" },
+        { key: "payment", label: "運営支援金の決済方法をお選びください。" }
+      ];
+      for (var g = 0; g < groups.length; g++) {
+        var box = form.querySelector('[data-group="' + groups[g].key + '"]');
+        if (box && !box.querySelector("input:checked")) {
+          if (note) { note.textContent = groups[g].label; note.style.color = "var(--color-accent-800)"; }
+          var first = box.querySelector("input");
+          if (first) { first.focus(); }
+          return;
+        }
+      }
+      var agreeBox = form.querySelector('[data-group="agree"] input');
+      if (agreeBox && !agreeBox.checked) {
+        if (note) { note.textContent = "掲載規約および同意事項へのご同意をお願いいたします。"; note.style.color = "var(--color-accent-800)"; }
+        agreeBox.focus();
+        return;
+      }
+
+      var params = new URLSearchParams();
+      form.querySelectorAll("[data-q]").forEach(function (el) {
+        var id = cfg.entries[el.dataset.q];
+        if (!id || !el.value) { return; }
+        if (el.type === "date") {
+          var p = el.value.split("-");
+          params.append(id + "_year", p[0]);
+          params.append(id + "_month", String(parseInt(p[1], 10)));
+          params.append(id + "_day", String(parseInt(p[2], 10)));
+        } else {
+          params.append(id, el.value);
+        }
+      });
+      form.querySelectorAll("[data-group]").forEach(function (group) {
+        var id = cfg.entries[group.dataset.group];
+        if (!id) { return; }
+        group.querySelectorAll("input:checked").forEach(function (input) { params.append(id, input.value); });
+      });
+      params.append("fvv", "1");
+
+      var btn = form.querySelector('[data-submit]');
+      if (btn) { btn.disabled = true; btn.textContent = "送信しています…"; }
+
+      fetch(cfg.action, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: params.toString()
+      }).then(function () {
+        form.style.display = "none";
+        var rail = document.getElementById("step-rail");
+        if (rail) { rail.style.display = "none"; }
+        if (done) { done.style.display = "block"; scrollToForm(); }
+      }).catch(function () {
+        if (btn) { btn.disabled = false; btn.textContent = "この内容で申し込む"; }
+        if (note) {
+          note.innerHTML = '送信できませんでした。恐れ入りますが <a href="' + cfg.viewform + '" target="_blank" rel="noopener">こちらのフォーム</a> からお申し込みください。';
+          note.style.color = "var(--color-accent-800)";
+        }
+      });
+    });
+
+    show(0);
+  }
+  if (document.readyState === "loading") { document.addEventListener("DOMContentLoaded", init); }
+  else { init(); }
+  setTimeout(init, 300);
+  setTimeout(init, 1200);
+  setTimeout(init, 3000);
+})();
+</script>
+
+<link rel="stylesheet" href="/site.css">
+<meta property="og:site_name" content="エゾわん！">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="広告・宣伝掲載のお申し込み（お知らせ掲載）｜エゾわん！">
+<meta property="og:description" content="エゾわん！アプリのお知らせ欄に、イベントやキャンペーン、新サービスの告知を掲載できます。北海道の愛犬家に届く、広告・宣伝掲載の依頼フォームです。">
+<meta property="og:url" content="https://pet.rai-group.net/Advertisement/">
+<meta property="og:image" content="https://pet.rai-group.net/img/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<header class="sh"><a href="/" aria-label="エゾわん！ トップへ"><img src="/img/logo.png" alt="エゾわん！" width="82" height="34"></a><a class="sh-back" href="/">トップページへ戻る</a></header>
+
+<div style="font-family:'Figtree','Zen Kaku Gothic New',system-ui,sans-serif;color:var(--color-text);background:var(--color-bg)">
+
+  <div style="position:relative;overflow:hidden;padding:0 0 64px">
+    <div class="deco" style="position:absolute;right:-260px;top:-300px;width:620px;height:620px;border-radius:999px;background:var(--color-accent-200);z-index:0"></div>
+    <div class="deco" style="position:absolute;right:40px;top:380px;width:240px;height:240px;border-radius:999px;background:var(--color-accent-2-100);z-index:0"></div>
+    <div style="position:relative;z-index:1;max-width:1100px;margin:0 auto;padding:34px 32px 0">
+      <div style="display:flex;align-items:center;gap:14px">
+        <img src="icon.png" alt="エゾわん！" style="width:44px;height:44px;flex:0 0 44px;border-radius:11px;display:block;box-shadow:var(--shadow-sm)">
+        <span style="font-family:'Zen Maru Gothic',system-ui,sans-serif;font-weight:700;font-size:21px">エゾわん！</span>
+      </div>
+
+      <p style="margin:56px 0 0;font-size:14px;font-weight:700;letter-spacing:.18em;color:var(--color-accent-700)">NEWS ・ 広告・宣伝掲載依頼</p>
+      <h1 style="font-family:'Caprasimo','Zen Maru Gothic',system-ui,sans-serif;font-size:46px;line-height:1.34;margin:16px 0 0;letter-spacing:-.01em">お知らせを、<br>飼い主さんのお手元へ。</h1>
+      <p style="margin:24px 0 0;max-width:30em;font-size:18px;line-height:2;color:var(--color-neutral-800)">エゾわん！は、北海道の犬の飼い主さんが毎日ひらくアプリです。イベントやキャンペーンのお知らせを、アプリのお知らせ画面とプッシュ通知で飼い主さんへお届けします。掲載をご希望の方は、下のフォームからお申し込みください。</p>
+
+      <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:28px">
+        <span class="tag tag-accent" style="font-size:14px;padding:9px 18px">北海道限定</span>
+        <span class="tag tag-accent-2" style="font-size:14px;padding:9px 18px">配信先の犬種を指定できます</span>
+        <span class="tag tag-outline" style="font-size:14px;padding:9px 18px">プッシュ通知でお届け</span>
+      </div>
+
+      <a href="#form" class="btn btn-primary" style="margin-top:34px;display:inline-flex;align-items:center;gap:12px;font-size:17px;padding:16px 32px">
+        掲載依頼フォームへ
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" style="flex:0 0 19px;display:block"><path d="M12 5v14"></path><path d="M5.5 12.5 12 19l6.5-6.5"></path></svg>
+      </a>
+    </div>
+  </div>
+
+  <div style="max-width:1100px;margin:0 auto;padding:8px 32px 80px">
+    <h2 style="font-family:'Caprasimo','Zen Maru Gothic',system-ui,sans-serif;font-size:34px;line-height:1.35;margin:0 0 14px">掲載されると、こうなります</h2>
+    <p style="margin:0 0 40px;max-width:32em;font-size:17px;line-height:1.95;color:var(--color-neutral-800)">アプリを使う飼い主さんの目に留まりやすくなる仕組みを用意しています。</p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px">
+      <div class="card elev-sm" style="border-radius:var(--radius-lg);padding:30px">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" style="display:block"><path d="M5 9a7 7 0 0 1 14 0v9a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 18V9Z"></path><path d="M9.5 21.5h5"></path></svg>
+        <p style="margin:18px 0 8px;font-weight:700;font-size:19px">お知らせ画面＋プッシュ通知</p>
+        <p style="margin:0;font-size:15px;line-height:1.95;color:var(--color-neutral-700)">アプリのお知らせ画面に掲載されるとともに、飼い主さんのスマートフォンへプッシュ通知でお届けします。</p>
+      </div>
+      <div class="card elev-sm" style="border-radius:var(--radius-lg);padding:30px">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" style="display:block"><circle cx="6" cy="8.5" r="2.4"></circle><circle cx="10.5" cy="5" r="2.4"></circle><circle cx="16" cy="5.5" r="2.4"></circle><circle cx="19.5" cy="10" r="2.4"></circle><path d="M12.5 10.5c2.4 0 4.6 1.7 5.2 4 .5 2-1 3.9-3 3.9-1 0-1.6-.4-2.2-.4s-1.2.4-2.2.4c-2 0-3.5-1.9-3-3.9.6-2.3 2.8-4 5.2-4Z"></path></svg>
+        <p style="margin:18px 0 8px;font-weight:700;font-size:19px">届けたい犬種を選べます</p>
+        <p style="margin:0;font-size:15px;line-height:1.95;color:var(--color-neutral-700)">配信先は「全て」または1つの犬種をご指定いただけます。お知らせしたい内容に合った飼い主さんへお届けできます。</p>
+      </div>
+      <div class="card elev-sm" style="border-radius:var(--radius-lg);padding:30px">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" style="display:block"><path d="M20 10.5c0 6.5-8 11.5-8 11.5s-8-5-8-11.5a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10.5" r="2.8"></circle></svg>
+        <p style="margin:18px 0 8px;font-weight:700;font-size:19px">チェックインスポットに</p>
+        <p style="margin:0;font-size:15px;line-height:1.95;color:var(--color-neutral-700)">開催場所を期間限定のチェックインスポットとして登録できます。来場した飼い主さんにポイントが付き、お出かけのきっかけになります。</p>
+      </div>
+    </div>
+
+    <div class="card elev-sm" style="border-radius:var(--radius-lg);padding:30px 34px;margin-top:20px;background:var(--color-accent-2-100)">
+      <p style="margin:0 0 8px;font-weight:700;font-size:18px;color:var(--color-accent-2-900)">わんちゃんと出かけたい方に届きます</p>
+      <p style="margin:0;font-size:15px;line-height:1.95;color:var(--color-accent-2-900)">エゾわん！を使っているのは、体調やごはんを記録しながら、わんちゃんと行ける場所を探している飼い主さんです。「今度の休みはどこへ行こう」と考えている方にお伝えできます。</p>
+    </div>
+  </div>
+
+  <div style="background:var(--color-accent-2-700);color:var(--color-accent-2-100);padding:72px 0">
+    <div style="max-width:1100px;margin:0 auto;padding:0 32px">
+      <h2 style="font-family:'Caprasimo','Zen Maru Gothic',system-ui,sans-serif;font-size:34px;line-height:1.35;margin:0 0 40px;color:#fff">お申し込みから掲載まで</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px">
+        <div style="background:rgba(255,255,255,.1);border-radius:var(--radius-lg);padding:30px">
+          <span style="display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:999px;background:#fff;color:var(--color-accent-2-800);font-family:'Caprasimo',serif;font-size:21px">1</span>
+          <p style="margin:18px 0 8px;font-weight:700;font-size:18px;color:#fff">フォームで申し込み</p>
+          <p style="margin:0;font-size:15px;line-height:1.95">ご連絡先と、掲載したいお知らせの内容をご記入ください。3つのステップに分かれています。</p>
+        </div>
+        <div style="background:rgba(255,255,255,.1);border-radius:var(--radius-lg);padding:30px">
+          <span style="display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:999px;background:#fff;color:var(--color-accent-2-800);font-family:'Caprasimo',serif;font-size:21px">2</span>
+          <p style="margin:18px 0 8px;font-weight:700;font-size:18px;color:#fff">内容の確認・ご連絡</p>
+          <p style="margin:0;font-size:15px;line-height:1.95">記載内容を確認し、掲載の可否と日程についてご記入のメールアドレスへご案内します。申請通過後、ヒーロー写真（1枚）をご提出いただきます。</p>
+        </div>
+        <div style="background:rgba(255,255,255,.1);border-radius:var(--radius-lg);padding:30px">
+          <span style="display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:999px;background:#fff;color:var(--color-accent-2-800);font-family:'Caprasimo',serif;font-size:21px">3</span>
+          <p style="margin:18px 0 8px;font-weight:700;font-size:18px;color:#fff">アプリに掲載</p>
+          <p style="margin:0;font-size:15px;line-height:1.95">ご希望の期間にあわせてお知らせ画面に掲載し、プッシュ通知でお届けします。掲載後の修正もご相談ください。</p>
+        </div>
+      </div>
+      <p style="margin:32px 0 0;font-size:15px;line-height:1.95;max-width:40em">掲載枠の状況によってご希望に添えないこともございますので、あらかじめご了承ください。</p>
+    </div>
+  </div>
+
+  <div id="form" style="max-width:1100px;margin:0 auto;padding:80px 32px 92px;position:relative">
+    <div class="deco" style="position:absolute;left:-190px;top:200px;width:300px;height:300px;border-radius:999px;background:var(--color-accent-200);z-index:0"></div>
+    <div style="position:relative;z-index:1">
+      <p style="margin:0 0 12px;font-size:14px;font-weight:700;letter-spacing:.18em;color:var(--color-accent-700)">APPLICATION ・ 掲載依頼</p>
+      <h2 style="font-family:'Caprasimo','Zen Maru Gothic',system-ui,sans-serif;font-size:38px;line-height:1.32;margin:0 0 16px">広告・宣伝掲載依頼</h2>
+      <p style="margin:0 0 36px;max-width:30em;font-size:17px;line-height:1.95;color:var(--color-neutral-800)">3つのステップに分かれています。各項目の説明をご確認いただきながら、順にご記入ください。送信内容は掲載とご連絡のためだけに利用します。</p>
+
+      <div style="border-radius:28px;background:var(--color-neutral-100);box-shadow:var(--shadow-lg);overflow:hidden;border:1px solid var(--color-accent-200)">
+        <div id="step-rail" style="display:flex;align-items:center;gap:8px 10px;padding:18px 24px;background:#fff;border-bottom:1px solid var(--color-accent-200);flex-wrap:wrap">
+          <span data-dot="0" style="display:inline-flex;align-items:center;gap:8px;background:var(--color-accent);color:#fff;border-radius:999px;padding:9px 18px;font-size:13px;font-weight:700">1 基本情報</span>
+          <span style="color:var(--color-neutral-400);font-size:13px">›</span>
+          <span data-dot="1" style="display:inline-flex;align-items:center;gap:8px;background:var(--color-neutral-200);color:var(--color-neutral-600);border-radius:999px;padding:9px 18px;font-size:13px;font-weight:700">2 掲載コンテンツ</span>
+          <span style="color:var(--color-neutral-400);font-size:13px">›</span>
+          <span data-dot="2" style="display:inline-flex;align-items:center;gap:8px;background:var(--color-neutral-200);color:var(--color-neutral-600);border-radius:999px;padding:9px 18px;font-size:13px;font-weight:700">3 運営支援金・規約</span>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScY4YkPDUvNdK3LDxcnfTTEcD3GrosORwpWYmABC5P5j51LDQ/viewform" target="_blank" rel="noopener" style="margin-left:auto;display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:700;white-space:nowrap">
+            Googleフォームで開く
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" style="flex:0 0 15px;display:block"><path d="M14 4h6v6"></path><path d="M19.5 4.5 11 13"></path><path d="M18 14.5V19a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 19V8a1.5 1.5 0 0 1 1.5-1.5H10"></path></svg>
+          </a>
+        </div>
+
+        <form id="news-form" novalidate="novalidate" style="display:block;padding:38px 36px 36px;background:var(--color-neutral-100)">
+
+          <div data-step="0">
+            <p style="margin:0;font-family:'Zen Maru Gothic',sans-serif;font-weight:700;font-size:23px;line-height:1.5">1. 基本情報（管理用・非公開）</p>
+            <p style="margin:14px 0 0;font-size:15px;line-height:2;color:var(--color-neutral-800);max-width:42em">「エゾわん！」は飼い主様のプライバシーを最優先し、会員登録不要で運営しております。そのため、情報の掲載を依頼される皆様には、コミュニティの安全性と信頼性を守るため最低限の確認事項をご入力いただいております。ご理解とご協力をお願い申し上げます。</p>
+
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:28px">
+              <div class="field">
+                <label for="q-person" style="display:block;font-weight:700;font-size:15px;margin-bottom:8px">依頼者名（担当者名） <span style="color:var(--color-accent-700)">＊必須</span></label>
+                <input class="input" id="q-person" data-q="person" required="required" type="text" style="width:100%;box-sizing:border-box">
+              </div>
+              <div class="field">
+                <label for="q-org" style="display:block;font-weight:700;font-size:15px;margin-bottom:8px">企業・団体名（個人の場合は不要）</label>
+                <input class="input" id="q-org" data-q="org" type="text" style="width:100%;box-sizing:border-box">
+              </div>
+            </div>
+
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:20px">
+              <div class="field">
+                <label for="q-email" style="display:block;font-weight:700;font-size:15px;margin-bottom:8px">メールアドレス <span style="color:var(--color-accent-700)">＊必須</span></label>
+                <input class="input" id="q-email" data-q="email" required="required" type="email" style="width:100%;box-sizing:border-box">
+              </div>
+              <div class="field">
+                <label for="q-tel" style="display:block;font-weight:700;font-size:15px;margin-bottom:8px">電話番号</label>
+                <input class="input" id="q-tel" data-q="tel" type="tel" style="width:100%;box-sizing:border-box">
+              </div>
+            </div>
+
+            <div class="field" style="margin-top:20px;max-width:340px">
+              <label for="q-period" style="display:block;font-weight:700;font-size:15px;margin-bottom:8px">掲載希望期間</label>
+              <p style="margin:0 0 10px;font-size:14px;line-height:1.85;color:var(--color-neutral-700)">掲載終了日を選択してください</p>
+              <input class="input" id="q-period" data-q="period" type="date" style="width:100%;box-sizing:border-box">
+            </div>
+
+            <div style="display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-top:34px">
+              <button type="button" data-next="1" class="nav-btn" style="border:0;cursor:pointer;background:var(--color-accent);color:#fff;border-radius:999px;padding:16px 38px;font-family:'Zen Maru Gothic',sans-serif;font-weight:700;font-size:17px">次へ</button>
+            </div>
+          </div>
+
+          <div data-step="1" style="display:none">
+            <p style="margin:0;font-family:'Zen Maru Gothic',sans-serif;font-weight:700;font-size:23px;line-height:1.5">2. アプリ掲載用コンテンツ（公開）</p>
+            <p style="margin:14px 0 0;font-size:15px;line-height:1.95;color:var(--color-neutral-800)">アプリの「お知らせ」欄に表示する内容です。</p>
+
+            <div class="field" style="margin-top:28px;max-width:420px">
+              <label for="q-area" style="display:block;font-weight:700;font-size:15px;margin-bottom:8px">配信先</label>
+              <p style="margin:0 0 10px;font-size:14px;line-height:1.85;color:var(--color-neutral-700)">「全て」または１つの犬種 ※すべての場合は「全て」と入力</p>
+              <input class="input" id="q-area" data-q="area" type="text" style="width:100%;box-sizing:border-box">
+            </div>
+
+            <div class="field" style="margin-top:24px">
+              <label for="q-title" style="display:block;font-weight:700;font-size:15px;margin-bottom:8px">タイトル <span style="color:var(--color-accent-700)">＊必須</span></label>
+              <p style="margin:0 0 10px;font-size:14px;line-height:1.85;color:var(--color-neutral-700);max-width:42em">別途ヒーロー写真（1枚）もご用意ください：アプリ内では写真が非常に重要です。申請通過後、提出いただきます。</p>
+              <input class="input" id="q-title" data-q="title" required="required" type="text" style="width:100%;box-sizing:border-box">
+            </div>
+
+            <div class="field" style="margin-top:24px">
+              <label for="q-pr" style="display:block;font-weight:700;font-size:15px;margin-bottom:8px">PRコメント：魅力を伝える紹介文。</label>
+              <div style="background:var(--color-accent-100);border-radius:18px;padding:20px 22px;margin-bottom:12px">
+                <p style="margin:0;font-size:14px;line-height:2;color:var(--color-accent-900)">必ず下記３点を明記してください。<br>・問い合わせ先：ユーザーが直接問い合わせるため。<br>・公式サイト・SNSのURL：HPやInstagram、Xなどのリンク先。（用意がない場合は省略可能）<br>・営業時間・開催時間：曜日ごとの詳細な時間<br>文章をハイパーリンクする場合は下記のように記載をお願いいたします。<br>例：詳しくは[こちら](https://pet.rai-group.net/About-EZO-WAN)をご覧ください。<br>※[]()は半角です。</p>
+              </div>
+              <textarea class="input" id="q-pr" data-q="pr" rows="7" style="width:100%;box-sizing:border-box;resize:vertical;font-family:inherit"></textarea>
+            </div>
+
+            <div class="field" style="margin-top:24px">
+              <label for="q-event" style="display:block;font-weight:700;font-size:15px;margin-bottom:8px">イベント名</label>
+              <p style="margin:0 0 10px;font-size:14px;line-height:1.85;color:var(--color-neutral-700);max-width:42em">チェックイン場所の設定に利用します。イベント名の記載が必要な場合はPRコメントにも記載してください。</p>
+              <input class="input" id="q-event" data-q="event" type="text" style="width:100%;box-sizing:border-box">
+            </div>
+
+            <div class="field" style="margin-top:24px">
+              <label for="q-place" style="display:block;font-weight:700;font-size:15px;margin-bottom:8px">開催場所住所</label>
+              <p style="margin:0 0 10px;font-size:14px;line-height:1.85;color:var(--color-neutral-700);max-width:42em">チェックイン場所の設定に利用します。イベント場所の記載が必要な場合はPRコメントにも記載してください。<br>住所入力例：札幌市中央区北２２条西１５丁目３−６（建物名不要）</p>
+              <input class="input" id="q-place" data-q="place" type="text" style="width:100%;box-sizing:border-box">
+            </div>
+
+            <div style="display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-top:34px">
+              <button type="button" data-prev="1" class="ghost-btn" style="cursor:pointer;background:transparent;color:var(--color-accent-700);border:1.5px solid var(--color-accent-300);border-radius:999px;padding:15px 30px;font-family:'Zen Maru Gothic',sans-serif;font-weight:700;font-size:16px">戻る</button>
+              <button type="button" data-next="1" class="nav-btn" style="border:0;cursor:pointer;background:var(--color-accent);color:#fff;border-radius:999px;padding:16px 38px;font-family:'Zen Maru Gothic',sans-serif;font-weight:700;font-size:17px">次へ</button>
+            </div>
+          </div>
+
+          <div data-step="2" style="display:none">
+            <p style="margin:0;font-family:'Zen Maru Gothic',sans-serif;font-weight:700;font-size:23px;line-height:1.5">運営支援金について</p>
+            <p style="margin:14px 0 0;font-size:15px;line-height:2;color:var(--color-neutral-800);max-width:42em">「エゾわん！」は、北海道の飼い主様が完全無料・会員登録不要で安心して愛犬との毎日を記録し、交流できる場を目指して運営しております。<br>このコミュニティを維持・発展させていくため、情報の掲載（告知・広告）をご希望される企業・個人様には、「アプリ運営支援金」としてのご寄付をお願いしております。<br>いただいた支援金は、システムの安定運用やセキュリティの維持、より便利な新機能の開発費として大切に活用させていただきます。北海道の愛犬家コミュニティを共に支え、盛り上げていただけるサポーターとして、皆様のご協力をお待ちしております。<br>・対象: 広告、イベント告知、新サービスの周知など<br>いただいた支援金は、アプリのサーバー維持費やセキュリティ強化、より便利な新機能の開発に大切に活用させていただきます。</p>
+
+            <button type="button" id="support-toggle" class="ghost-btn" style="margin-top:18px;cursor:pointer;background:transparent;color:var(--color-accent-700);border:1.5px solid var(--color-accent-300);border-radius:999px;padding:12px 26px;font-weight:700;font-size:15px">掲載区分の詳細を読む</button>
+            <div id="support-body" style="display:none;margin-top:16px">
+              <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px">
+                <div style="background:#fff;border-radius:18px;padding:22px 24px;box-shadow:var(--shadow-sm)">
+                  <p style="margin:0;font-weight:700;font-size:16px;line-height:1.55">1. 個人サポーター<br>（オフ会・有志のイベントなど）</p>
+                  <p style="margin:10px 0 0;font-size:14px;line-height:2;color:var(--color-neutral-700)">飼い主様同士の交流を目的とした、非営利のイベント告知に最適です。<br>・支援金の目安：1,000円 〜 3,000円<br>・掲載特典：<br>　- アプリ内「お知らせ」欄へのイベント告知掲載<br>　- 開催場所を期間限定の「チェックインスポット」として登録<br>　- 来場したユーザーにポイント（1pt〜）を付与し、お出かけのきっかけを作ります</p>
+                </div>
+                <div style="background:#fff;border-radius:18px;padding:22px 24px;box-shadow:var(--shadow-sm)">
+                  <p style="margin:0;font-weight:700;font-size:16px;line-height:1.55">2. ビジネスサポーター<br>（新サービス・商品宣伝）</p>
+                  <p style="margin:10px 0 0;font-size:14px;line-height:2;color:var(--color-neutral-700)">お店のPRや新商品の紹介など、継続的な周知を行いたい企業・店舗様向けです。<br>・支援金の目安：月額 5,000円 〜<br>・掲載特典：<br>　- なし</p>
+                </div>
+                <div style="background:#fff;border-radius:18px;padding:22px 24px;box-shadow:var(--shadow-sm)">
+                  <p style="margin:0;font-weight:700;font-size:16px;line-height:1.55">3. イベントサポーター<br>（大型イベント・集客目的）</p>
+                  <p style="margin:10px 0 0;font-size:14px;line-height:2;color:var(--color-neutral-700)">札幌ドームなどの大規模イベントや、集中的な集客を行いたい場合に活用いただけます。<br>・支援金の目安：10,000円 〜（1イベント単位）<br>・掲載特典：<br>　- 犬種別（１犬種）にお知らせ可能<br>　- 会場を「公式チェックポイント」として登録<br>　- ポイント付与による強力な集客フック（新規認定施設ボーナス +10pt 設定可、掲載区分４）<br>　- ランキング入賞者へのプレゼント配布企画などのタイアップ相談</p>
+                </div>
+              </div>
+            </div>
+
+            <div style="height:1px;background:var(--color-accent-200);margin:32px 0"></div>
+
+            <p style="margin:0 0 14px;font-weight:700;font-size:15px">掲載区分 <span style="color:var(--color-accent-700)">＊必須</span></p>
+            <div data-group="plan" style="display:flex;flex-direction:column;gap:10px">
+              <label class="opt" style="display:flex;align-items:center;gap:12px;background:#fff;border:1.5px solid var(--color-accent-200);border-radius:18px;padding:15px 20px;font-size:15px;line-height:1.6;cursor:pointer"><input type="radio" name="plan" value="個人サポーター" style="accent-color:var(--color-accent);width:18px;height:18px;flex:0 0 18px">個人サポーター</label>
+              <label class="opt" style="display:flex;align-items:center;gap:12px;background:#fff;border:1.5px solid var(--color-accent-200);border-radius:18px;padding:15px 20px;font-size:15px;line-height:1.6;cursor:pointer"><input type="radio" name="plan" value="ビジネスサポーター（新サービス・商品宣伝）" style="accent-color:var(--color-accent);width:18px;height:18px;flex:0 0 18px">ビジネスサポーター（新サービス・商品宣伝）</label>
+              <label class="opt" style="display:flex;align-items:center;gap:12px;background:#fff;border:1.5px solid var(--color-accent-200);border-radius:18px;padding:15px 20px;font-size:15px;line-height:1.6;cursor:pointer"><input type="radio" name="plan" value="イベントサポーター（大型イベント・集客目的）" style="accent-color:var(--color-accent);width:18px;height:18px;flex:0 0 18px">イベントサポーター（大型イベント・集客目的）</label>
+              <label class="opt" style="display:flex;align-items:flex-start;gap:12px;background:#fff;border:1.5px solid var(--color-accent-200);border-radius:18px;padding:15px 20px;font-size:15px;line-height:1.65;cursor:pointer"><input type="radio" name="plan" value="イベントサポーター（大型イベント・集客目的かつ認定パートナー施設登録希望）" style="margin-top:3px;accent-color:var(--color-accent);width:18px;height:18px;flex:0 0 18px">イベントサポーター（大型イベント・集客目的かつ認定パートナー施設登録希望）</label>
+            </div>
+
+            <p style="margin:30px 0 8px;font-weight:700;font-size:15px">運営支援金の決済方法 <span style="color:var(--color-accent-700)">＊必須</span></p>
+            <p style="margin:0 0 16px;font-size:14px;line-height:1.95;color:var(--color-neutral-700);max-width:42em">当アプリは、皆様からの温かいご支援を最大限に運営費や開発費へ充てるため、事務作業の簡略化に努めております。そのため、誠に恐縮ながら領収書の発行は省略させていただいております。銀行振込の控えやクレジットカードの利用明細をもって、領収書に代えさせていただきますようお願い申し上げます。</p>
+            <div data-group="payment" style="display:flex;flex-wrap:wrap;gap:10px">
+              <label class="opt" style="display:inline-flex;align-items:center;gap:10px;background:#fff;border:1.5px solid var(--color-accent-200);border-radius:999px;padding:13px 24px;font-size:15px;cursor:pointer"><input type="radio" name="payment" value="銀行振込" style="accent-color:var(--color-accent);width:18px;height:18px">銀行振込</label>
+              <label class="opt" style="display:inline-flex;align-items:center;gap:10px;background:#fff;border:1.5px solid var(--color-accent-200);border-radius:999px;padding:13px 24px;font-size:15px;cursor:pointer"><input type="radio" name="payment" value="クレジットカード" style="accent-color:var(--color-accent);width:18px;height:18px">クレジットカード</label>
+              <label class="opt" style="display:inline-flex;align-items:center;gap:10px;background:#fff;border:1.5px solid var(--color-accent-200);border-radius:999px;padding:13px 24px;font-size:15px;cursor:pointer"><input type="radio" name="payment" value="PayPay" style="accent-color:var(--color-accent);width:18px;height:18px">PayPay</label>
+            </div>
+
+            <div style="height:1px;background:var(--color-accent-200);margin:32px 0"></div>
+
+            <p style="margin:0 0 12px;font-weight:700;font-size:15px">規約同意 <span style="color:var(--color-accent-700)">＊必須</span></p>
+            <button type="button" id="terms-toggle" class="ghost-btn" style="cursor:pointer;background:transparent;color:var(--color-accent-700);border:1.5px solid var(--color-accent-300);border-radius:999px;padding:12px 26px;font-weight:700;font-size:15px">規約全文を読む</button>
+            <div id="terms-body" class="terms-box" style="display:none;margin-top:14px;background:#fff;border:1px solid var(--color-accent-200);border-radius:22px;padding:28px 30px;max-height:420px;overflow-y:auto">
+              <p style="margin:0;font-size:14px;line-height:2.05;color:var(--color-neutral-800);max-width:46em">エゾわん！掲載規約および同意事項<br>本サービスへの情報掲載を申し込む企業、団体、または個人（以下「掲載者」）は、以下の事項を確認し、同意した上で申し込むものとします。<br><br>1. 掲載の趣旨と運営支援金<br>・本アプリは北海道の飼い主様が無料で安心して利用できる環境を維持することを目的としています。<br>・掲載にあたっては、アプリの維持・開発を支えるための「運営支援金（寄付）」をお願いしております。<br>・支援金は、システムの保守、セキュリティの強化、およびコミュニティ活性化のために大切に活用させていただきます。<br><br>2. お支払いおよび領収書について<br>・支援金のお支払い確定後、掲載作業を開始いたします。<br>・運営コストを最大限アプリの維持に充てるため、当事務局からの領収書の発行は行っておりません。銀行振込控えや決済履歴を証明書類としてご利用ください。<br>・一度お振り込みいただいた支援金は、理由のいかんを問わず返金いたしかねます。<br><br>3. 掲載内容の責任と著作権<br>・掲載する写真、文章、リンク先等の情報に関する著作権および肖像権は掲載者に帰属するか、正当な権利を有しているものに限ります。<br>・万が一、掲載内容に関して第三者との間で紛争が生じた場合、掲載者の責任と費用において解決するものとし、当事務局は一切の責任を負いません。<br>・情報の正確性（営業時間、住所、設備条件等）については掲載者が責任を持って確認してください。<br><br>4. 禁止事項<br>以下の内容を含む投稿や周知は固く禁止します。<br>・公序良俗に反する内容、または法令に違反する内容。<br>・わんちゃんや飼い主様、第三者に対する誹謗中傷、名誉毀損。<br>・虚偽の内容、または誤解を招く表現。<br>・犬やペットに関係のない過度な勧誘や不適切な広告。<br><br>5. 運営側の権利と免責事項<br>・アプリのUI（見た目）や操作性を保つため、提供いただいた素材のトリミングや文章の微調整を運営側で行う場合があります。<br>・ユーザー同士、またはユーザーと掲載者の間で生じたトラブル（来店時の事故、チャットでのやり取り等）について、当事務局は理由のいかんを問わず一切の責任を負いません。<br>・利用規約違反や不適切な行為が確認された場合、運営の判断で事前の通知なく掲載を停止または削除することがあります。その際、支援金の返金は行いません。<br><br>6. 個人情報の取り扱い<br>・掲載申込時に取得した氏名、連絡先等の基本情報は、掲載に関する事務連絡および管理にのみ利用します。<br>・一般ユーザーが利用する匿名データとは厳格に切り離して管理し、本人の同意なく第三者に提供することはありません。</p>
+            </div>
+            <div data-group="agree" style="margin-top:16px">
+              <label class="opt" style="display:flex;align-items:flex-start;gap:12px;background:#fff;border:1.5px solid var(--color-accent-200);border-radius:18px;padding:16px 20px;font-size:15px;line-height:1.65;cursor:pointer"><input type="checkbox" value="上記の「掲載規約および同意事項」を読み、内容に同意します。" style="margin-top:3px;accent-color:var(--color-accent);width:18px;height:18px;flex:0 0 18px">上記の「掲載規約および同意事項」を読み、内容に同意します。</label>
+            </div>
+
+            <div style="display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-top:36px">
+              <button type="button" data-prev="1" class="ghost-btn" style="cursor:pointer;background:transparent;color:var(--color-accent-700);border:1.5px solid var(--color-accent-300);border-radius:999px;padding:15px 30px;font-family:'Zen Maru Gothic',sans-serif;font-weight:700;font-size:16px">戻る</button>
+              <button type="submit" data-submit="1" class="nav-btn" style="border:0;cursor:pointer;background:var(--color-accent);color:#fff;border-radius:999px;padding:16px 38px;font-family:'Zen Maru Gothic',sans-serif;font-weight:700;font-size:17px">この内容で申し込む</button>
+            </div>
+            <p id="news-note" style="margin:16px 0 0;font-size:14px;line-height:1.85;color:var(--color-neutral-700)">送信内容は掲載とご連絡のためだけに利用します。</p>
+          </div>
+        </form>
+
+        <div id="news-done" style="display:none;padding:56px 34px;background:var(--color-neutral-100);text-align:center">
+          <span style="display:inline-flex;align-items:center;justify-content:center;width:66px;height:66px;border-radius:999px;background:var(--color-accent-2-200)">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent-2-800)" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" style="display:block"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg>
+          </span>
+          <p style="margin:20px 0 8px;font-family:'Caprasimo','Zen Maru Gothic',system-ui,sans-serif;font-size:26px">お申し込みを受け付けました</p>
+          <p style="margin:0;font-size:16px;line-height:1.95;color:var(--color-neutral-700)">内容を確認のうえ、ご記入いただいたメールアドレスへご案内いたします。ありがとうございました。</p>
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:28px">
+        <div class="card elev-sm" style="border-radius:var(--radius-lg);padding:26px 28px">
+          <p style="margin:0 0 8px;font-weight:700;font-size:17px">ヒーロー写真は申請通過後に</p>
+          <p style="margin:0;font-size:15px;line-height:1.95;color:var(--color-neutral-700)">アプリ内では写真が非常に重要です。掲載が決まりましたら、ヒーロー写真（1枚）をご提出いただきます。</p>
+        </div>
+        <div class="card elev-sm" style="border-radius:var(--radius-lg);padding:26px 28px;background:var(--color-accent-100)">
+          <p style="margin:0 0 8px;font-weight:700;font-size:17px;color:var(--color-accent-800)">送信できなかったときは</p>
+          <p style="margin:0;font-size:15px;line-height:1.95;color:var(--color-accent-900)">通信の状況によって送信に失敗することがあります。ボタンの横にメッセージが出た場合は、そこに表示されるリンクからお申し込みください。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<footer class="sfoot">
+  <div class="sfoot-in">
+    <div class="ft">
+      <div class="ft-brand">
+        <a href="/" aria-label="エゾわん！ トップへ"><img src="/img/logo.png" alt="エゾわん！" width="120" height="50"></a>
+        <p>北海道の愛犬家のためのアプリ</p>
+        <a class="ft-ig" href="https://www.instagram.com/ezo_wan_hokkaido/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+      <nav aria-label="アプリについて"><h3>アプリについて</h3><a href="/About-EZO-WAN/">使い方ガイド</a><a href="/ezo-wan-point/">ポイントガイド</a></nav>
+      <nav aria-label="施設・事業者の方"><h3>施設・事業者の方</h3><a href="/Join-EZO-WAN/">認定パートナー施設 申込み</a><a href="/Advertisement/">宣伝・お知らせ掲載 申込み</a></nav>
+      <nav aria-label="規約・お問い合わせ"><h3>規約・お問い合わせ</h3><a href="/terms/">利用規約</a><a href="/privacy/">プライバシーポリシー</a><a href="/tokushoho/">特定商取引法に基づく表記</a><a href="mailto:ezo-wan@rai-group.net?subject=%E3%82%A8%E3%82%BE%E3%82%8F%E3%82%93%EF%BC%81%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B&amp;body=%E3%82%A8%E3%82%BE%E3%82%8F%E3%82%93%EF%BC%81%E9%81%8B%E5%96%B6%E4%BA%8B%E5%8B%99%E5%B1%80%20%E5%BE%A1%E4%B8%AD%0A%0A%E3%80%90%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B%E5%86%85%E5%AE%B9%E3%80%91%0A%EF%BC%88%E3%81%93%E3%81%93%E3%81%AB%E3%81%94%E8%A8%98%E5%85%A5%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%EF%BC%89%0A%0A%E3%80%90%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%88%E4%BB%BB%E6%84%8F%EF%BC%89%E3%80%91%0A%0A%E3%80%90%E3%81%94%E5%88%A9%E7%94%A8%E3%81%AE%E6%A9%9F%E7%A8%AE%EF%BC%88iPhone%20%2F%20Android%EF%BC%89%E3%80%91%0A%0A">お問い合わせ</a></nav>
+    </div>
+    <p class="ft-copy">© RAI GROUP ／ 運営：RAI GROUP</p>
+  </div>
+</footer>
+</body>
+</html>

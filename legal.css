@@ -1,0 +1,43 @@
+:root{--bg:#FFF8EE;--cream:#FFF1E0;--card:#fff;--line:#F0DCC0;--ink:#3A2A1E;--sub:#7A6350;--brand:#C67139;--brand-d:#A85A28;--green:#2F7D4F;--green-bg:#E7F4EC}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Zen Maru Gothic","Hiragino Maru Gothic ProN","Yu Gothic",Meiryo,sans-serif;line-height:1.9;font-weight:500;-webkit-text-size-adjust:100%}
+a{color:var(--brand-d)}
+.in{max-width:860px;margin:0 auto;padding:0 20px}
+.head{position:sticky;top:0;z-index:20;background:rgba(255,248,238,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.head .in{max-width:1080px;display:flex;align-items:center;gap:20px;height:64px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-weight:900;font-size:21px;margin-right:auto}
+.logo img{height:40px;width:auto}
+.logo .mark{width:34px;height:34px;border-radius:50%;background:var(--brand);display:grid;place-items:center}
+.logo .mark svg{width:20px;height:20px;fill:#fff}
+.logo .bang{color:var(--brand)}
+.head nav{display:flex;gap:20px;font-size:14px;font-weight:700}
+.head nav a{text-decoration:none;color:var(--sub)}
+.head nav a:hover,.head nav a[aria-current]{color:var(--brand)}
+.page{padding:44px 0 64px}
+.kicker{font-size:13px;font-weight:900;letter-spacing:.12em;color:var(--brand-d);margin:0 0 6px}
+h1{font-size:clamp(26px,4.4vw,38px);line-height:1.4;margin:0 0 10px;font-weight:900}
+.meta{font-size:13px;color:var(--sub);margin:0 0 24px}
+.lead{margin:0 0 24px}
+h2{font-size:clamp(19px,2.8vw,23px);line-height:1.5;margin:44px 0 12px;font-weight:900;scroll-margin-top:84px;padding-left:12px;border-left:5px solid var(--brand)}
+h3{font-size:17px;margin:30px 0 8px;font-weight:900;color:var(--brand-d)}
+p{margin:0 0 12px}
+ul,ol{margin:0 0 14px;padding-left:1.4em}
+li{margin-bottom:4px}
+.box{background:var(--green-bg);border:1px solid #BFE0CC;border-radius:16px;padding:16px 20px;margin:0 0 20px}
+.box b{display:block;color:var(--green);margin-bottom:4px}
+.box p{margin:0;font-size:14px}
+.toc{background:var(--cream);border:1px solid var(--line);border-radius:18px;padding:20px 24px;margin:0 0 8px}
+.toc b{display:block;margin-bottom:8px}
+.toc ol{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:4px 24px;margin:0;font-size:14px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:0 0 14px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+.card h4{margin:0 0 6px;font-size:15px;font-weight:900}
+.card p{margin:0;font-size:13.5px;line-height:1.85}
+.tel{background:var(--cream);border:1px solid var(--line);border-radius:18px;padding:18px 22px}
+.sign{margin-top:32px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:var(--sub)}
+.tbl{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;font-size:14.5px}
+.tbl th,.tbl td{text-align:left;vertical-align:top;padding:12px 16px;border-bottom:1px solid var(--line)}
+.tbl th{width:11em;background:var(--cream);white-space:nowrap}
+.tbl tr:last-child th,.tbl tr:last-child td{border-bottom:none}
+@media (max-width:700px){.head nav{display:none}.tbl th{width:auto;white-space:normal}.tbl,.tbl tbody,.tbl tr,.tbl th,.tbl td{display:block}.tbl th{border-bottom:none;padding-bottom:2px}}
