@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ロゴ使用ガイドライン｜エゾわん！北海道の愛犬アプリ</title>
+<meta name="description" content="アプリ『エゾわん！』のロゴ素材と使い方の決まりです。紹介記事・店頭掲示・チラシなどでロゴをお使いになる方は、こちらからダウンロードしてください。">
+<link rel="canonical" href="https://pet.rai-group.net/brand/">
+<link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=swap">
+<link rel="stylesheet" href="/legal.css">
+<link rel="stylesheet" href="/site.css">
+<style>
+:root{--logo:#CD641E;--logo-ink:#1F1D1B;--ng:#B8402E}
+.hero-logo{display:block;width:min(420px,80%);height:auto;margin:18px 0 26px}
+.dl-main{display:flex;align-items:center;justify-content:center;gap:8px;min-height:52px;padding:12px 22px;background:var(--logo);color:#fff;font-weight:900;font-size:16px;border-radius:999px;text-decoration:none;max-width:420px}
+.dl-main:hover{background:#B4561A}
+.dl-sub{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;margin:12px 0 4px;font-size:13.5px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:6px 16px;border:1.5px solid var(--brand);border-radius:999px;color:var(--brand-d);font-weight:700;font-size:13.5px;text-decoration:none;background:#fff;cursor:pointer;font-family:inherit}
+.btn:hover{background:var(--brand);color:#fff}
+.note{font-size:12.5px;color:var(--sub);margin:4px 0 0}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin:0 0 14px}
+.lcard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:10px;break-inside:avoid}
+.lcard .pv{display:flex;align-items:center;justify-content:center;height:150px;border-radius:10px;background:#FFF8EE;padding:16px}
+.lcard .pv.dark{background:#3A2A1E}
+.lcard .pv.orange{background:var(--logo)}
+.lcard .pv img{max-width:100%;max-height:100%;height:auto}
+.lcard h4{margin:0;font-size:15px;font-weight:900}
+.lcard p{margin:0;font-size:13.5px;line-height:1.7;color:var(--sub)}
+.lcard .row{display:flex;flex-wrap:wrap;gap:8px}
+.space{display:inline-block;max-width:100%;padding:0;border:2px dashed #C9A888;border-radius:6px;background:#fff}
+.space img{display:block;width:min(406px,calc(100vw - 100px));height:auto;margin:min(24px,5.8vw)}
+.gtbl{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);font-size:14px;line-height:1.7}
+.gtbl th,.gtbl td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}
+.gtbl th{background:var(--cream);font-weight:900}
+.tbl-wrap{overflow-x:auto;margin:0 0 14px}
+.ng{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px;margin:0 0 18px}
+.ng figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px;break-inside:avoid}
+.ng .pv{height:90px;display:flex;align-items:center;justify-content:center;overflow:hidden;border-radius:8px;background:#FFF8EE;position:relative}
+.ng .pv img{width:150px;height:auto}
+.ng figcaption{font-size:13px;line-height:1.6;margin-top:8px;display:flex;gap:6px;align-items:flex-start}
+.ng figcaption::before{content:"×";color:var(--ng);font-weight:900;font-size:16px;line-height:1.3}
+.ng.ok figcaption::before{content:"○";color:var(--green)}
+.ng-color img{filter:hue-rotate(170deg)}
+.ng-stretch img{transform:scaleX(1.45)}
+.ng-tilt img{transform:rotate(-14deg)}
+.ng-shadow img{filter:drop-shadow(4px 5px 3px rgba(0,0,0,.55))}
+.ng-photo{background:linear-gradient(135deg,#F7E9C8,#FFFDF5 55%,#EAD9B4)!important}
+.ng-photo img{opacity:1}
+.ng-crowd .pv span{position:absolute;font-size:12px;font-weight:900;color:#3A2A1E;background:#FFE0B8;border-radius:4px;padding:1px 6px}
+.ng-crowd .pv span.a{top:8px;left:8px}.ng-crowd .pv span.b{bottom:8px;right:8px}
+.ng-crowd .pv img{width:130px}
+.ng-text .pv b{font-size:26px;font-family:serif;color:#1F1D1B}
+.ng-text .pv b i{font-style:normal;color:var(--logo)}
+.ng-dark{background:#3A2A1E!important}
+.ng-orange{background:var(--logo)!important}
+.swatches{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:0 0 14px}
+.sw{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;break-inside:avoid}
+.sw .chip{height:84px}
+.sw dl{margin:0;padding:12px 16px;font-size:13.5px;display:grid;grid-template-columns:auto 1fr;gap:2px 12px}
+.sw dt{color:var(--sub)}
+.sw dd{margin:0;font-weight:700}
+.sw h4{margin:12px 16px 0;font-size:15px;font-weight:900}
+.copy{font:inherit;font-weight:700;color:var(--brand-d);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline dotted;min-height:24px}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#3A2A1E;color:#fff;padding:10px 18px;border-radius:999px;font-size:14px;opacity:0;pointer-events:none;transition:opacity .2s}
+.toast.show{opacity:1}
+.intro-txt{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin:0 0 12px;break-inside:avoid}
+.intro-txt b{display:block;font-size:13px;color:var(--sub);margin-bottom:4px}
+.intro-txt p{margin:0}
+.print-url{display:none}
+@media print{
+  @page{size:A4 portrait;margin:15mm}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  body{background:#fff}
+  .sh,.sfoot,.dl-main,.dl-sub,.lcard .row,.copy-hint,.toast{display:none!important}
+  .print-url{display:block;font-size:12px;color:#555}
+  .lcard,.ng figure,.sw,.intro-txt,.gtbl{border-color:#ccc}
+  h2{break-after:avoid}
+  .page{padding:0}
+}
+</style>
+</head>
+<body>
+<header class="sh"><a href="/" aria-label="エゾわん！ トップへ"><img src="/img/logo.png" alt="エゾわん！" width="82" height="34"></a><a class="sh-back" href="/">トップページへ戻る</a></header>
+
+<main class="page"><div class="in">
+<p class="kicker">BRAND</p>
+<h1>ロゴ使用ガイドライン</h1>
+<p class="print-url">https://pet.rai-group.net/brand/</p>
+<p class="lead">「エゾわん！」のロゴを使いたい方へ。ロゴの素材と、使い方の決まりをこのページにまとめています。</p>
+<img class="hero-logo" src="files/ezowan-logo-horizontal-color.svg" alt="エゾわん！のロゴ" width="420" height="99">
+
+<a class="dl-main" href="ezowan-logo.zip" download>ロゴ素材をまとめてダウンロード(ZIP)</a>
+<div class="dl-sub"><button class="btn" type="button" onclick="window.print()">このページをPDFで保存・印刷</button></div>
+<p class="note">ダウンロードできないときは、下のロゴの種類から1つずつお選びください。</p>
+
+<h2 id="usage">使ってよい場面</h2>
+<div class="grid3" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr))">
+  <div class="lcard"><h4>ご連絡なしで使えます</h4><p>形や色を変えずに使うときに限ります。費用はかかりません。</p><ul style="margin:0;font-size:14px"><li>記事・番組・SNS・ブログでの紹介</li><li>認定パートナー施設の店頭掲示・チラシ・ホームページ・SNS</li><li>エゾわん！に載っているイベントの告知</li><li>学校・自治体・団体の資料</li></ul></div>
+  <div class="lcard"><h4>先にご連絡ください</h4><p>内容を見て、使ってよいかをお返事します。</p><ul style="margin:0;font-size:14px"><li>商品・グッズに入れる、ロゴの入ったものを売る</li><li>お金を払って出す広告(チラシ・ネット広告・看板など)</li><li>共同キャンペーン・コラボなど、一緒に企画しているように見える使い方</li><li>このページの決まりに合わない形・色・大きさ</li></ul></div>
+</div>
+<p class="note">くわしくは、下の<a href="#terms">ロゴの使い方の決まり</a>をご覧ください。</p>
+
+<h2 id="types">ロゴの種類</h2>
+<p>使う場所の形に合わせて選んでください。</p>
+<div class="grid3">
+  <div class="lcard"><div class="pv"><img src="files/ezowan-logo-horizontal-color.svg" alt="横長のロゴ" width="200" height="47"></div><h4>横長</h4><p>ふだんはこちら。ウェブサイト・チラシの見出しなど。</p><div class="row"><a class="btn" href="files/ezowan-logo-horizontal-color.svg" download>SVG</a><a class="btn" href="files/ezowan-logo-horizontal-color.png" download>PNG</a></div></div>
+  <div class="lcard"><div class="pv"><img src="files/ezowan-logo-vertical-color.svg" alt="縦型のロゴ" width="140" height="118"></div><h4>縦型</h4><p>正方形に近い場所に。ポスター・店頭のステッカーなど。</p><div class="row"><a class="btn" href="files/ezowan-logo-vertical-color.svg" download>SVG</a><a class="btn" href="files/ezowan-logo-vertical-color.png" download>PNG</a></div></div>
+  <div class="lcard"><div class="pv"><img src="files/ezowan-logo-mark-color.svg" alt="マークだけのロゴ" width="110" height="110"></div><h4>マークだけ</h4><p>小さい場所に。SNSのアイコン・地図の印など。</p><div class="row"><a class="btn" href="files/ezowan-logo-mark-color.svg" download>SVG</a><a class="btn" href="files/ezowan-logo-mark-color.png" download>PNG</a></div></div>
+</div>
+
+<h2 id="colors">色の版</h2>
+<p>背景の色に合わせて、3つの版から選んでください。</p>
+<div class="grid3">
+  <div class="lcard"><div class="pv"><img src="files/ezowan-logo-horizontal-color.svg" alt="カラーのロゴ" width="200" height="47"></div><h4>カラー</h4><p>白・クリームなど、明るい背景に。</p><div class="row"><a class="btn" href="files/ezowan-logo-horizontal-color.svg" download>横長 SVG</a><a class="btn" href="files/ezowan-logo-vertical-color.svg" download>縦型 SVG</a><a class="btn" href="files/ezowan-logo-mark-color.svg" download>マーク SVG</a></div></div>
+  <div class="lcard"><div class="pv dark"><img src="files/ezowan-logo-horizontal-white.svg" alt="白抜きのロゴ" width="200" height="47"></div><h4>白抜き</h4><p>オレンジ・濃い色・黒の背景に。</p><div class="row"><a class="btn" href="files/ezowan-logo-horizontal-white.svg" download>横長 SVG</a><a class="btn" href="files/ezowan-logo-vertical-white.svg" download>縦型 SVG</a><a class="btn" href="files/ezowan-logo-mark-white.svg" download>マーク SVG</a></div></div>
+  <div class="lcard"><div class="pv"><img src="files/ezowan-logo-horizontal-black.svg" alt="黒1色のロゴ" width="200" height="47"></div><h4>黒1色</h4><p>1色しか刷れない印刷(新聞・スタンプなど)に。</p><div class="row"><a class="btn" href="files/ezowan-logo-horizontal-black.svg" download>横長 SVG</a><a class="btn" href="files/ezowan-logo-vertical-black.svg" download>縦型 SVG</a><a class="btn" href="files/ezowan-logo-mark-black.svg" download>マーク SVG</a></div></div>
+</div>
+<p class="note">PNG(透明な背景)はZIPにすべて入っています。</p>
+
+<h2 id="space">まわりの余白と小ささの限度</h2>
+<p>ロゴのまわりには、<b>丸の幅の4分の1</b>以上の余白を空けてください。この中に、ほかの文字・絵・写真のふち・紙のふちを入れないでください。</p>
+<div class="space" aria-label="点線の内側が余白の範囲"><img src="files/ezowan-logo-horizontal-color.svg" alt="余白の見本" width="406" height="96"></div>
+<p class="note">点線の内側が、空けておく余白です。</p>
+<p style="margin-top:18px">これより小さくすると文字が読めなくなります。小さい場所では「マークだけ」をお使いください。</p>
+<div class="tbl-wrap"><table class="gtbl">
+<tr><th>種類</th><th>画面</th><th>印刷</th></tr>
+<tr><td>横長</td><td>幅120px以上</td><td>幅30mm以上</td></tr>
+<tr><td>縦型</td><td>幅64px以上</td><td>幅16mm以上</td></tr>
+<tr><td>マークだけ</td><td>24px四方以上</td><td>8mm四方以上</td></tr>
+</table></div>
+
+<h2 id="bg">背景ごとの使い分け</h2>
+<div class="tbl-wrap"><table class="gtbl">
+<tr><th>背景</th><th>使う版</th></tr>
+<tr><td>白・クリーム・うすい色</td><td>カラー</td></tr>
+<tr><td>オレンジ・濃い色・黒</td><td>白抜き</td></tr>
+<tr><td>赤・黄など、オレンジに近い色</td><td>白抜き か 黒1色(カラーは丸が背景にとけるため使わない)</td></tr>
+<tr><td>写真・模様の上</td><td>暗いところに白抜き。または白い四角(余白つき)の上にカラー。読みにくければ使わない</td></tr>
+<tr><td>1色しか刷れない印刷</td><td>黒1色(暗い背景なら白抜き)</td></tr>
+</table></div>
+<div class="ng ok">
+  <figure><div class="pv"><img src="files/ezowan-logo-horizontal-color.svg" alt=""></div><figcaption>明るい背景にカラー</figcaption></figure>
+  <figure><div class="pv ng-orange"><img src="files/ezowan-logo-horizontal-white.svg" alt=""></div><figcaption>オレンジの背景に白抜き</figcaption></figure>
+  <figure><div class="pv ng-dark"><img src="files/ezowan-logo-horizontal-white.svg" alt=""></div><figcaption>濃い背景に白抜き</figcaption></figure>
+</div>
+
+<h2 id="ng">してはいけない使い方</h2>
+<p>ロゴは、お渡しした形と色のままお使いください。</p>
+<div class="ng">
+  <figure class="ng-color"><div class="pv"><img src="files/ezowan-logo-horizontal-color.svg" alt=""></div><figcaption>色を変える</figcaption></figure>
+  <figure class="ng-stretch"><div class="pv"><img src="files/ezowan-logo-horizontal-color.svg" alt=""></div><figcaption>縦や横にだけ伸ばす・つぶす</figcaption></figure>
+  <figure class="ng-tilt"><div class="pv"><img src="files/ezowan-logo-horizontal-color.svg" alt=""></div><figcaption>傾ける・回す</figcaption></figure>
+  <figure class="ng-shadow"><div class="pv"><img src="files/ezowan-logo-horizontal-color.svg" alt=""></div><figcaption>影・ぼかし・ふち取りをつける</figcaption></figure>
+  <figure><div class="pv"><img src="files/ezowan-logo-mark-color.svg" alt="" style="width:60px;transform:scaleY(.7) rotate(12deg)"></div><figcaption>肉球の形を変える・ほかの絵と組み合わせる</figcaption></figure>
+  <figure><div class="pv ng-photo"><img src="files/ezowan-logo-horizontal-white.svg" alt=""></div><figcaption>明るい写真に白抜きなど、読みにくい置き方</figcaption></figure>
+  <figure class="ng-text"><div class="pv"><b>エゾわん<i>!</i></b></div><figcaption>文字を打ち直す・書体を変える</figcaption></figure>
+  <figure class="ng-crowd"><div class="pv"><span class="a">SALE</span><img src="files/ezowan-logo-horizontal-color.svg" alt=""><span class="b">50%OFF</span></div><figcaption>余白にほかのものを入れる</figcaption></figure>
+</div>
+
+<h2 id="brandcolor">ブランドの色</h2>
+<div class="swatches">
+  <div class="sw"><div class="chip" style="background:#CD641E"></div><h4>エゾわんオレンジ</h4><dl><dt>HEX</dt><dd><button class="copy" type="button" data-copy="#CD641E">#CD641E</button></dd><dt>RGB</dt><dd>205, 100, 30</dd><dt>CMYK</dt><dd>C0 M70 Y95 K10(目安)</dd></dl></div>
+  <div class="sw"><div class="chip" style="background:#1F1D1B"></div><h4>ロゴの黒</h4><dl><dt>HEX</dt><dd><button class="copy" type="button" data-copy="#1F1D1B">#1F1D1B</button></dd><dt>RGB</dt><dd>31, 29, 27</dd><dt>CMYK</dt><dd>K100(目安)</dd></dl></div>
+  <div class="sw"><div class="chip" style="background:#fff;border-bottom:1px solid var(--line)"></div><h4>白</h4><dl><dt>HEX</dt><dd><button class="copy" type="button" data-copy="#FFFFFF">#FFFFFF</button></dd><dt>RGB</dt><dd>255, 255, 255</dd><dt>CMYK</dt><dd>紙の色(インクなし)</dd></dl></div>
+</div>
+<p class="note">CMYKは目安です。印刷所や紙で色が変わります。大事な印刷は、印刷所で色見本をご確認ください。<span class="copy-hint">HEXの値は押すとコピーできます。</span></p>
+
+<h2 id="name">名前の書き方</h2>
+<ul>
+<li>サービス名は「<b>エゾわん！</b>」です。最後の「！」は全角です。</li>
+<li>運営は「RAI GROUP」です。</li>
+</ul>
+<div class="tbl-wrap"><table class="gtbl">
+<tr><th>正しい</th><th>まちがい</th></tr>
+<tr><td>エゾわん！</td><td>エゾわん!(半角) / エゾワン / えぞわん / エゾわん(！なし)</td></tr>
+<tr><td>RAI GROUP</td><td>RAIグループ / ライグループ</td></tr>
+</table></div>
+
+<h2 id="intro">紹介文</h2>
+<p>ご紹介いただくときは、次の文をそのままお使いいただけます。</p>
+<div class="intro-txt"><b>短い紹介(27字)</b><p>エゾわん！は、北海道の愛犬家のためのスマホアプリです。</p></div>
+<div class="intro-txt"><b>ふつうの紹介(100字ほど)</b><p>エゾわん！は、北海道の愛犬家のためのスマホアプリです。近くのわんちゃんのプロフィール、お散歩に向いた時間帯の目安、ワクチン接種証明の保管、地震や迷子などもしもの時の備えを、ひとつにまとめています。ダウンロード無料(一部有料)。</p></div>
+<div class="intro-txt"><b>くわしい紹介(200字ほど)</b><p>エゾわん！は、北海道で犬と暮らす人のためのスマホアプリです(iPhone・Android)。近くのわんちゃんの性格や好きなことを会う前に確かめて、挨拶を送れます。気温や暑さからお散歩に向いた時間帯の目安を表示し、ワクチン接種証明の保管、お散歩や体調の記録、地震・気象警報のお知らせ、迷子さがしまで、ひとつのアプリで使えます。ダウンロード無料(一部有料)。運営はRAI GROUP(北海道)。</p></div>
+
+<h2 id="partner">認定パートナー施設の方へ</h2>
+<div class="tbl-wrap"><table class="gtbl">
+<tr><th>使ってよい書き方</th><th>使わない書き方</th></tr>
+<tr><td>エゾわん！認定パートナー施設</td><td>エゾわん！公認・認証・お墨付き</td></tr>
+<tr><td>エゾわん！でチェックインできます</td><td>エゾわん！おすすめの安心な施設</td></tr>
+<tr><td>エゾわん！に掲載中</td><td>エゾわん！提携店・公式ショップ</td></tr>
+</table></div>
+<p>お客さまに口コミやSNSの投稿をお願いして、お礼(割引・プレゼントなど)を渡す場合、その投稿はお店の広告として扱われます。投稿に「PR」などの言葉を入れてもらってください。お礼と引き換えに、よい口コミだけをお願いすることはおやめください。</p>
+
+<h2 id="terms">ロゴの使い方の決まり</h2>
+<h3>1. この決まりについて</h3>
+<p>この決まりは、北海道の愛犬アプリ「エゾわん！」の名前とロゴ(以下「ロゴ」)を使うときのものです。ロゴを使った方は、この決まりに同意したものとします。</p>
+<h3>2. 権利について</h3>
+<p>ロゴと「エゾわん！」の名前の権利は、運営者の RAI GROUP にあります。この決まりは、下に書いた範囲でロゴを使うことを認めるものです。権利をお譲りするものではありません。</p>
+<h3>3. ご連絡なしで使ってよい場面</h3>
+<p>このページの素材を、形や色を変えずに使う場合は、次の場面ではご連絡はいりません。費用もかかりません。</p>
+<ul>
+<li>記事・番組・SNS・ブログで、エゾわん！を紹介・説明するとき</li>
+<li>認定パートナー施設が、店頭の掲示・チラシ・自社のホームページやSNSで「エゾわん！認定パートナー施設です」「エゾわん！でチェックインできます」とお知らせするとき</li>
+<li>エゾわん！に載っているイベントの告知で、アプリでチェックインできることをお知らせするとき</li>
+<li>学校・自治体・団体の資料で、アプリを紹介するとき</li>
+</ul>
+<h3>4. 先にご連絡が必要な場面</h3>
+<p>次の場面では、使う前にご連絡ください。内容を見て、使ってよいかをお返事します。</p>
+<ul>
+<li>商品・グッズ(服・ステッカー・包装など)にロゴを入れるとき、ロゴの入ったものを売るとき</li>
+<li>お金を払って出す広告(折り込みチラシ・ネット広告・看板など)にロゴを入れるとき</li>
+<li>エゾわん！と一緒に企画しているように見える使い方(共同キャンペーン・「コラボ」など)</li>
+<li>自社の名前やロゴとエゾわん！のロゴを並べて、組んでいるように見える使い方</li>
+<li>3の場面でも、このページの決まりに合わない形・色・大きさで使いたいとき</li>
+</ul>
+<h3>5. してはいけないこと</h3>
+<ul>
+<li>エゾわん！が「公認」「推奨」「保証」していると受け取られる書き方をすること</li>
+<li>提携・協賛・出資の関係がないのに、あるように見せること</li>
+<li>ロゴの形・色・文字を変えること。ほかの絵や文字と組み合わせて、新しいマークを作ること</li>
+<li>ロゴや、よく似た名前を、自社の商品名・サービス名・会社名・アプリ名・アカウント名・ドメインに使うこと。商標として出願すること</li>
+<li>エゾわん！の公式アカウントや運営になりすますこと</li>
+<li>法令や公序良俗に反する内容、人や動物を傷つける内容、政治・宗教の宣伝、エゾわん！の信用を傷つける内容と一緒に使うこと</li>
+<li>素材そのものを、ほかのサイトで配ったり売ったりすること</li>
+</ul>
+<h3>6. 「認定パートナー施設」について</h3>
+<p>「エゾわん！認定パートナー施設」は、エゾわん！のアプリに掲載している施設を指す、エゾわん！独自の呼び名です。国や自治体の認定ではありません。また、施設の安全や品質をエゾわん！が保証するものではありません。掲載が終わったときは、「認定パートナー施設」の表示とロゴの掲示をおやめください。</p>
+<h3>7. 使うのをやめていただくことがあります</h3>
+<p>この決まりに合わない使い方や、エゾわん！の信用を傷つけるおそれのある使い方を見つけたときは、使うのをやめていただくようお願いすることがあります。お願いを受けたら、14日以内に使うのをやめてください。すでに印刷したものの扱いは、ご相談のうえ決めます。</p>
+<h3>8. 保証しないこと</h3>
+<p>素材は、いまある状態のままお渡しします。素材を使ったことで起きた損害について、運営者は責任を負いません。ただし、運営者にわざと、または大きな不注意があった場合は除きます。</p>
+<h3>9. 決まりの変更</h3>
+<p>この決まりは変えることがあります。変えたときは、このページの日付を新しくします。変える前に始めた使い方は、ご相談に応じます。</p>
+<h3>10. App Store・Google Play のバッジについて</h3>
+<p>このページの素材に、App Store・Google Play のバッジは入っていません。バッジは、Apple・Google がそれぞれ公開している素材と決まりに沿ってお使いください。</p>
+
+<h2 id="contact">お問い合わせ</h2>
+<p>ロゴの使い方のご相談、取材のお申し込み、ここにない素材のご希望は、メールでお問い合わせください。通常3〜5営業日以内にお返事します。「先にご連絡が必要な場面」では、お返事をお待ちいただいてからお使いください。</p>
+<p><a href="mailto:ezo-wan@rai-group.net?subject=%E3%83%AD%E3%82%B4%E3%81%AE%E4%BD%BF%E7%94%A8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;body=%E3%82%A8%E3%82%BE%E3%82%8F%E3%82%93%EF%BC%81%E9%81%8B%E5%96%B6%E4%BA%8B%E5%8B%99%E5%B1%80%20%E5%BE%A1%E4%B8%AD%0A%0A%E3%80%90%E4%BC%9A%E7%A4%BE%E3%83%BB%E3%81%8A%E5%BA%97%E3%83%BB%E5%9B%A3%E4%BD%93%E3%81%AE%E5%90%8D%E5%89%8D%E3%80%91%0A%0A%E3%80%90%E3%81%94%E6%8B%85%E5%BD%93%E3%81%AE%E6%96%B9%E3%81%AE%E3%81%8A%E5%90%8D%E5%89%8D%E3%80%91%0A%0A%E3%80%90%E4%BD%BF%E3%81%86%E5%A0%B4%E6%89%80%EF%BC%88%E7%B4%99%E3%83%BB%E3%82%A6%E3%82%A7%E3%83%96%E3%83%BB%E5%95%86%E5%93%81%E3%81%AA%E3%81%A9%EF%BC%89%E3%81%A8%E6%9C%9F%E9%96%93%E3%80%91%0A%0A%E3%80%90%E3%81%A7%E3%81%8D%E3%81%82%E3%81%8C%E3%82%8A%E3%81%AE%E8%A6%8B%E6%9C%AC%EF%BC%88%E3%81%82%E3%82%8C%E3%81%B0%E6%B7%BB%E4%BB%98%EF%BC%89%E3%80%91%0A">ezo-wan@rai-group.net</a>(件名「ロゴの使用について」)</p>
+
+<p class="sign">制定日:2026年11月23日<br>運営:RAI GROUP</p>
+</div></main>
+<div class="toast" role="status" aria-live="polite"></div>
+
+<footer class="sfoot">
+  <div class="sfoot-in">
+    <div class="ft">
+      <div class="ft-brand">
+        <a href="/" aria-label="エゾわん！ トップへ"><img src="/img/logo.png" alt="エゾわん！" width="120" height="50"></a>
+        <p>北海道の愛犬家のためのアプリ</p>
+        <a class="ft-ig" href="https://www.instagram.com/ezo_wan_hokkaido/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+      <nav aria-label="アプリについて"><h3>アプリについて</h3><a href="/About-EZO-WAN/">使い方ガイド</a><a href="/ezo-wan-point/">ポイントガイド</a></nav>
+      <nav aria-label="施設・事業者の方"><h3>施設・事業者の方</h3><a href="/Join-EZO-WAN/">認定パートナー施設 申込み</a><a href="/Advertisement/">宣伝・お知らせ掲載 申込み</a></nav>
+      <nav aria-label="規約・お問い合わせ"><h3>規約・お問い合わせ</h3><a href="/terms/">利用規約</a><a href="/privacy/">プライバシーポリシー</a><a href="/tokushoho/">特定商取引法に基づく表記</a><a href="/contact/">お問い合わせ・退会</a></nav>
+    </div>
+    <p class="ft-copy">© RAI GROUP ／ 運営：RAI GROUP</p>
+  </div>
+</footer>
+<script>
+(function(){var t=document.querySelector('.toast'),h;
+document.querySelectorAll('.copy').forEach(function(b){b.addEventListener('click',function(){
+var v=b.getAttribute('data-copy');var done=function(){t.textContent='コピーしました';t.classList.add('show');clearTimeout(h);h=setTimeout(function(){t.classList.remove('show')},2000)};
+try{navigator.clipboard.writeText(v).then(done,function(){})}catch(e){}});});})();
+</script>
+</body>
+</html>
