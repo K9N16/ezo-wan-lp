@@ -79,6 +79,9 @@ h2{font-size:clamp(26px,3.4vw,38px)}
 .badge{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;font-size:17px;font-weight:800}
 .tag{padding:6px 14px;border-radius:999px;background:var(--n200);font-size:13.5px;font-weight:600;color:var(--n800)}
 .pt-note{text-align:center;font-size:13px;color:#645c50;margin:28px 16px 0}
+.acc>.hd{display:flex;align-items:center;gap:16px;padding:20px 22px 10px}
+.acc>.ds{padding:0 24px 22px 78px;font-size:15.5px;line-height:1.85;color:var(--n800)}
+.more-note{font-size:14.5px;line-height:1.8;color:var(--n700);margin-top:14px}
 </style>
 <link rel="stylesheet" href="/site.css">
 <meta name="description" content="エゾわん！の公式チェックポイントにチェックインしてポイントをためる仕組みのご案内。ポイントの種類、月間ランキング、称号バッジを紹介します。">
@@ -125,6 +128,16 @@ h2{font-size:clamp(26px,3.4vw,38px)}
         <h2>6種類のポイント 🎁</h2>
         <p class="sub">1回のチェックインで、いくつも同時に貯まることがあります。タップすると条件が開きます。</p>
         <div style="display:flex;flex-direction:column;gap:12px" id="accs"></div>
+      </div>
+
+      <div>
+        <h2>チェックインのほかにも、たまります 🎁</h2>
+        <div style="display:flex;flex-direction:column;gap:12px;margin-top:22px">
+          <div class="acc"><div class="hd"><span class="ic">🤝</span><span class="nm">友だちの招待が成立</span><span class="pt">+50pt</span></div><p class="ds">招待コードを入れた友だちが、7日のうち3日アプリを開くか、はじめて公式チェックインをしたとき。1か月10件までです。開いた日は次の朝に数えます。</p></div>
+          <div class="acc"><div class="hd"><span class="ic">🎁</span><span class="nm">招待コードで登録</span><span class="pt">+30pt</span></div><p class="ds">上と同じときに、招待された方にも入ります。</p></div>
+          <div class="acc"><div class="hd"><span class="ic">📝</span><span class="nm">プロフィールを全部仕上げ</span><span class="pt">+10pt</span></div><p class="ds">お誕生日・お迎えした日・性別と犬種・好きなこと嫌いなこと・性格診断の5つを、あとから全部入れたとき。飼い主の方お一人に1回です。</p></div>
+        </div>
+        <p class="more-note">どれも「今月のポイント」と「生涯獲得ポイント」に入ります。</p>
       </div>
 
       <div class="calc">
