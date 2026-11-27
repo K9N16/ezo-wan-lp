@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>アンケートのお願い｜エゾわん！北海道の愛犬アプリ</title>
+<meta name="description" content="アプリ「エゾわん！」のアンケートです。飼い主さんと、ペット関連施設・サービスの方にお聞きしています。約2分・全部任意です。">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://pet.rai-group.net/survey/">
+<link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=swap">
+<link rel="stylesheet" href="/legal.css">
+<link rel="stylesheet" href="/site.css">
+<link rel="stylesheet" href="/survey/survey.css">
+</head>
+<body>
+<header class="sh"><a href="/" aria-label="エゾわん！ トップへ"><img src="/img/logo.png" alt="エゾわん！" width="82" height="34"></a><a class="sh-back" href="/">トップページへ戻る</a></header>
+
+<main class="sv">
+  <div id="sv"></div>
+  <div class="sv-hp" aria-hidden="true"><label>空けておいてください<input id="sv-hp" tabindex="-1" autocomplete="off"></label></div>
+  <noscript><p>このアンケートは JavaScript を有効にするとお答えいただけます。</p></noscript>
+</main>
+
+<script>
+window.SURVEY_START = {
+  title: 'アンケートのお願い',
+  html: '<p>アプリ「エゾわん！」をもっと使いやすくするため、皆さまの声をお聞かせください。</p>'
+    + '<ul><li>約2分・どれもとばせます</li>'
+    + '<li>お名前はお聞きしません</li></ul>',
+  note: '回答は集計してサービス改善に使います。<a href="/privacy/" target="_blank" rel="noopener">プライバシーポリシー</a>'
+};
+window.SURVEYS = {
+  owner: {
+    label: '飼い主さんはこちら',
+    sub: '愛犬と暮らしている方',
+    title: '飼い主さんアンケート',
+    key: 'owner-v1',
+    action: 'https://docs.google.com/forms/d/e/1FAIpQLSfQVU36m7OeI-8-HQdnKVa_PaiNS6rrsvfWrfKNtywNSuxotA/formResponse',
+    sourceEntry: 'entry.583989050',
+    doneHtml: '<p>いただいた声は、アプリの改善に大切に使わせていただきます。</p>'
+      + '<p style="margin-top:22px"><a class="sv-btn" style="display:inline-flex;align-items:center;justify-content:center;text-decoration:none;max-width:320px;width:100%" href="/">エゾわん！のトップへ</a></p>',
+    questions: [
+      { id: 'area', entry: 'entry.1104272984', type: 'radio', q: 'お住まいの地域は？',
+        hint: '道央=札幌・小樽・苫小牧など／道南=函館など／道北=旭川・稚内など／道東=帯広・釧路・北見など',
+        options: ['道央', '道南', '道北', '道東', '北海道以外'] },
+      { id: 'age', entry: 'entry.1685563963', type: 'radio', q: '飼い主さんの年代は？',
+        options: ['10代', '20代', '30代', '40代', '50代', '60代', '70代以上'] },
+      { id: 'dogs', entry: 'entry.1775383241', type: 'radio', q: '飼っている犬の数は？',
+        options: ['1匹', '2匹', '3匹以上'] },
+      { id: 'size', entry: 'entry.556002424', type: 'check', q: '犬の大きさは？',
+        singleWhen: function (a) { return a.dogs === '1匹'; },
+        options: ['小型犬', '中型犬', '大型犬'] },
+      { id: 'dogage', entry: 'entry.92961808', type: 'check', q: '犬の年齢は？',
+        singleWhen: function (a) { return a.dogs === '1匹'; },
+        options: ['子犬(1歳未満)', '成犬', 'シニア(7歳以上)'] },
+      { id: 'outing', entry: 'entry.1880571308', type: 'radio', q: '愛犬と出かける回数は？',
+        hint: 'お散歩以外のお出かけです',
+        options: ['週に何回も', '週1くらい', '月に1〜2回', 'ほとんど出ない'] },
+      { id: 'places', entry: 'entry.873794531', type: 'check', q: '愛犬とよく行く場所は？',
+        show: function (a) { return a.outing !== 'ほとんど出ない'; },
+        options: ['ドッグラン', 'カフェ・飲食店', '宿', 'トリミング', '動物病院', '公園', 'イベント', 'その他'] },
+      { id: 'find', entry: 'entry.356488084', type: 'check', q: '行き先はどうやって探しますか？',
+        show: function (a) { return a.outing !== 'ほとんど出ない'; },
+        options: ['Instagram', 'Google 検索・マップ', '友人の口コミ', 'アプリ', 'その他'] },
+      { id: 'trouble', entry: 'entry.1090927150', type: 'check', q: '愛犬と出かけるときに困ることは？',
+        options: ['犬OKか分からない', '掲載情報が古い', '混雑', 'ワクチン証明を毎回出す', '冬に遊べる場所がない', 'その他'] },
+      { id: 'record', entry: 'entry.1491104421', type: 'check', q: '愛犬について記録していることは？',
+        exclusive: ['記録していない'],
+        options: ['体重', 'ワクチン接種', 'お薬', '体調', '通院', '記録していない'] },
+      { id: 'recordHow', entry: 'entry.776650699', type: 'radio', q: 'どうやって記録していますか？',
+        hint: 'いちばんよく使うものを1つ',
+        show: function (a) { var r = a.record || []; return !(r.length === 1 && r[0] === '記録していない'); },
+        options: ['紙', 'スマホのメモ', 'アプリ', '記録していない'] },
+      { id: 'know', entry: 'entry.1290710643', type: 'radio', q: 'アプリ「エゾわん！」を知っていますか？',
+        options: ['使っている', '知っているが使っていない', '知らない'] },
+      { id: 'how', entry: 'entry.1897603324', type: 'radio', q: 'エゾわん！を知ったきっかけは？',
+        show: function (a) { return a.know !== '知らない'; },
+        options: ['Instagram', '施設で知った', '友人', 'アプリストア', 'その他'] },
+      { id: 'notice', entry: 'entry.286968053', type: 'check', q: 'スマホに届くと嬉しい知らせは？',
+        options: ['地震・気象警報', '停電', '迷子情報（愛犬や他の子の迷子情報）', 'イベント', 'クーポン'] },
+      { id: 'wish', entry: 'entry.1191156948', type: 'text', q: 'あったら嬉しいこと・ご意見があれば教えてください',
+        hint: 'なければ、そのまま「送信する」を押してください',
+        placeholder: '例：冬でも犬と遊べる屋内の場所を知りたい' }
+    ]
+  },
+  facility: {
+    label: 'ペット関連施設・サービスの方はこちら',
+    sub: 'ドッグラン・カフェ・宿・トリミング・動物病院など',
+    title: 'ペット関連施設・サービスの方のアンケート',
+    key: 'facility-v1',
+    action: 'https://docs.google.com/forms/d/e/1FAIpQLSeB-fFZfQxFbZnQn4hJizGB7ToPq9bSb5PSmr1ESqFmdE2j1w/formResponse',
+    sourceEntry: 'entry.1130818652',
+    doneHtml: '<p>いただいた声は、アプリと施設さまとの連携づくりに大切に使わせていただきます。</p>'
+      + '<p style="margin-top:22px"><a class="sv-btn" style="display:inline-flex;align-items:center;justify-content:center;text-decoration:none;max-width:320px;width:100%" href="/Join-EZO-WAN/">認定パートナー施設のご案内</a></p>'
+      + '<p style="margin-top:10px"><a href="/">エゾわん！のトップへ</a></p>',
+    questions: [
+      { id: 'kind', entry: 'entry.1191156948', type: 'radio', q: '施設の業種は？',
+        hint: 'いくつかある場合は、いちばん主なものを',
+        options: ['ドッグラン', 'カフェ・飲食', '宿泊', 'トリミング', '動物病院', 'ペットショップ', 'その他'] },
+      { id: 'area', entry: 'entry.965706081', type: 'radio', q: '施設のある地域は？',
+        hint: '道央=札幌・小樽・苫小牧など／道南=函館など／道北=旭川・稚内など／道東=帯広・釧路・北見など',
+        options: ['道央', '道南', '道北', '道東', '北海道以外'] },
+      { id: 'promo', entry: 'entry.400605785', type: 'check', q: '今している集客の方法は？',
+        exclusive: ['口コミだけ'],
+        options: ['Instagram', 'Googleマップ', 'チラシ', 'ホームページ', '口コミだけ'] },
+      { id: 'promoGood', entry: 'entry.2076182496', type: 'check', q: 'その中で、効果があったものは？',
+        hint: '効果がなかった場合は、とばしてください',
+        optionsFrom: 'promo',
+        show: function (a) { var p = a.promo; if (!p) return true; return p.length > 0 && !(p.length === 1 && p[0] === '口コミだけ'); },
+        options: ['Instagram', 'Googleマップ', 'チラシ', 'ホームページ', '口コミだけ'] },
+      { id: 'promoTrouble', entry: 'entry.1290084785', type: 'check', q: '集客の悩みは？',
+        options: ['新しいお客さんが来ない', '平日や冬が閑散としている', '発信する時間がない', '続けて来てもらえない'] },
+      { id: 'docs', entry: 'entry.582314855', type: 'check', q: '来店時に確かめている書類は？',
+        exclusive: ['確認している書類はない'],
+        options: ['狂犬病', '混合ワクチン', 'ノミ・ダニ', '確認している書類はない'] },
+      { id: 'docsHow', entry: 'entry.213618073', type: 'radio', q: 'どうやって確かめていますか？',
+        hint: 'いちばん多い方法を1つ。「アプリ」はスマホのアプリで確かめる方法です',
+        show: function (a) { var d = a.docs || []; return !(d.length === 1 && d[0] === '確認している書類はない'); },
+        options: ['証明書を見る（原本必須）', '写真を見る（原本不要）', 'コピーを保管', 'アプリ'] },
+      { id: 'opsTrouble', entry: 'entry.719948885', type: 'check', q: '運営の悩みは？',
+        options: ['証明書の確認が手間', '予約の管理', '当日キャンセル', '犬同士のトラブル', '顧客の台帳'] },
+      { id: 'know', entry: 'entry.702431843', type: 'radio', q: 'アプリ「エゾわん！」を知っていますか？',
+        options: ['使っている', '知っているが使っていない', '知らない'] },
+      { id: 'link', entry: 'entry.923206562', type: 'check', q: 'エゾわん！との連携で、魅力に感じるものは？',
+        options: ['施設の掲載', 'クーポン', 'イベント告知', '受付業務', '証明書の確認'] },
+      { id: 'price', entry: 'entry.1363271812', type: 'radio', q: '受付や集客のシステムにかけている月額は？',
+        hint: '今お使いのシステムがない方は、払ってもよいと思う月額を',
+        options: ['無料', '〜1,000円', '〜3,000円', '5,000円より上'] },
+      { id: 'help', entry: 'entry.1317958368', type: 'check', q: 'ご協力いただけそうなことは？',
+        exclusive: ['今は難しい'],
+        options: ['ポスター・チラシを置く', 'イベントを一緒に開く', 'クーポンを出す', '今は難しい'] },
+      { id: 'opinion', entry: 'entry.577553613', type: 'text', q: 'ご意見・ご要望があれば教えてください',
+        hint: 'なければ、そのまま「次へ」を押してください',
+        placeholder: '例：冬の平日にお客さんを呼べる企画がほしい' },
+      { id: 'contactOk', entry: 'entry.1647880091', type: 'radio', q: '後日、エゾわん！からご連絡してもよいですか？',
+        hint: 'ご意見の詳しいお話や、連携のご案内をお送りします',
+        options: ['はい', 'いいえ'] },
+      { id: 'contact', type: 'contact', q: 'ご連絡先を教えてください',
+        show: function (a) { return a.contactOk === undefined || a.contactOk === 'はい'; },
+        fields: [
+          { id: 'cName', entry: 'entry.1440253870', label: '施設名', autocomplete: 'organization' },
+          { id: 'cMail', entry: 'entry.765055653', label: 'メールアドレス', inputType: 'email', autocomplete: 'email' }
+        ],
+        check: function (a) {
+          var m = (a.cMail || '').trim();
+          if (!m) return 'メールアドレスを入れてください(ご連絡が要らない場合は「戻る」で「いいえ」を)';
+          if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(m)) return 'メールアドレスの形をご確認ください';
+          return '';
+        },
+        note: 'いただいた連絡先は、このアンケートのご連絡だけに使います。<a href="/privacy/" target="_blank" rel="noopener">プライバシーポリシー</a>' }
+    ]
+  }
+};
+</script>
+<script src="/survey/survey.js"></script>
+</body>
+</html>
